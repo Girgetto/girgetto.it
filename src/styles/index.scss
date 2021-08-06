@@ -2,6 +2,11 @@
 @import "../templates";
 @import "../config/global_variables";
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .App {
   margin: 0 10%;
 }
