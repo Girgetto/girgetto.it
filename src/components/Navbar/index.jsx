@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 
-import config from "../../config/config.json";
-
 const links = [
   { link: "/", name: "Latest" },
   { link: "/newsletter", name: "Newsletter" },

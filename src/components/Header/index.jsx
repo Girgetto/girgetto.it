@@ -1,11 +1,9 @@
 import React from "react";
 
-import config from "../../config/config.json";
-
 const Header = () => (
   <header className="header row flex">
     <div className="header-img">
-      <img></img>
+      <img alt="main-post"></img>
     </div>
     <article className="article">
       <h1>Product Review</h1>

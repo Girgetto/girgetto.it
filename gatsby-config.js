@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "girgetto.it",
-    author: `Giorgio Grassini`,
+    author: { name: `Giorgio Grassini` },
     description: `girgetto.it personal blog`,
     siteUrl: `https://girgetto.it`,
     social: {
@@ -30,11 +30,11 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: "blog",
+        path: "./content/blog/",
       },
-      __key: "images",
     },
+    `gatsby-transformer-remark`,
     {
       resolve: "gatsby-source-graphql",
       options: {
