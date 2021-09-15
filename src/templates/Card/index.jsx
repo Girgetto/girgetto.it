@@ -1,14 +1,13 @@
 import React from "react";
 
-const Card = (props) => {
+const Card = ({ node }) => {
   return (
     <div className="card">
       <img alt="posts" loading="lazy" id="image" src="" />
       <header className="description">
-        <h5>Heading</h5>
+        <h5>{node.frontmatter.title}</h5>
         <p>
-          Write an amazing description in this dedicated card section. Each word
-          counts...{" "}
+          {node.frontmatter.description}
         </p>
         <button>
           Learn more
