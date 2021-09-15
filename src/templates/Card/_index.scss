@@ -11,15 +11,19 @@
   margin: 16px 0;
 
   #image {
+    border-radius: 14px;
     height: 200px;
     width: 100%;
     left: 0px;
     top: 0px;
-    border-radius: 16px;
+    object-fit: cover;
   }
 
   .description {
     padding: 24px;
+    @include grid;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     button {
       background-color: $primary;

@@ -9,7 +9,7 @@ export default function Posts() {
   } = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark {
+        allMarkdownRemark(skip: 1) {
           edges {
             node {
               id

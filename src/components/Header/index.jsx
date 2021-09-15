@@ -14,6 +14,7 @@ const Header = () => {
               frontmatter {
                 title
                 description
+                image
               }
             }
           }
@@ -27,7 +28,7 @@ const Header = () => {
   return (
     <header className="header row flex">
       <div className="header-img">
-        <img alt="main-post"></img>
+        <img alt="main-post" src={post.node.frontmatter.image}/>
       </div>
       <article className="article">
         <h1>{post.node.frontmatter.title}</h1>
