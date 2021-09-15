@@ -1,0 +1,33 @@
+.card {
+  left: calc(50% - 341px / 2 - 406px);
+  top: 554px;
+  background: #ffffff;
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+    0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  border-radius: 20px;
+  width: 341px;
+  height: 398px;
+
+  #image {
+    height: 200px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border-radius: 16px;
+  }
+
+  .description {
+    padding: 24px;
+
+    button {
+      background-color: $primary;
+      height: 36px;
+      width: 106px;
+      left: 16px;
+      top: 123px;
+      border-radius: 4px;
+      border: none;
+      color: $textSelected;
+    }
+  }
+}

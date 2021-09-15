@@ -1,24 +1,36 @@
 import React from "react";
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
 
 import config from "../../config/config.json";
 
 const links = [
-  { href: config.github, title: "GitHub" },
-  { href: config.twitter, title: "Twitter" },
-  { href: config.girgetto_io, title: "Girgetto.io" },
-  { href: config.dev_to, title: "dev.to" },
+  { link: "/", name: "Latest" },
+  { link: "/newsletter", name: "Newsletter" },
+  { link: "/podcast", name: "Podcast" },
 ];
 
-const Navbar = () => (
-  <ul>
-    {links.map(({ href, title }) => (
-      <li key={title}>
-        <a target="_blank" rel="noopener noreferrer" href={href}>
-          {title}
-        </a>
-      </li>
-    ))}
-  </ul>
+const Navbar = ({ location }) => (
+  <header className="flex" id="header" role="banner">
+    <a href="https://girgetto.it">
+      <h1>girgetto.it</h1>
+    </a>
+    <nav id="links" className="flex">
+      {links.map(({ link, name }) => (
+        <Link
+          key={link}
+          to={link}
+          className={"link" + (location.pathname === link ? " is-selected" : "")}
+        >
+          {name}
+        </Link>
+      ))}
+    </nav>
+  </header>
 );
 
 export default Navbar;
+
+Navbar.propTypes = {
+  location: PropTypes.shape(),
+};

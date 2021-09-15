@@ -1,21 +1,20 @@
-import * as React from "react";
+import React from "react";
+import PropTypes from 'prop-types';
 
 import * as Components from "../components";
+import Layout from '../layout';
 
-const IndexPage = () => (
-  <div className="App">
-    <Components.SEO title="Home" />
-    <Components.Navbar />
-    <Components.Header />
-    <Components.About />
-    <div className="flex space row">
+const IndexPage = ({ location }) => (
+    <Layout location={location}>
+      <Components.SEO title="Home" />
+      <Components.Header />
       <Components.Posts />
-      <Components.Videos />
-    </div>
-    <Components.Projects />
-    <Components.Footer />
-    <Components.Cookies />
-  </div>
-);
+      <Components.Footer />
+    </Layout>
+  );
 
 export default IndexPage;
+
+IndexPage.propTypes = {
+  location: PropTypes.shape()
+};

@@ -1,16 +1,21 @@
 import React from "react";
 
-import Background from "../../assets/background.js";
 import config from "../../config/config.json";
 
 const Header = () => (
-  <header className="portfolio-header row">
-    <Background />
-    <div className="container header-presentation">
-      <img src={config.gitHubImg} className="profile-logo" alt="logo" />
-      <h1 className="portfolio-title">Giorgio Grassini</h1>
-      <h2 className="header-job-title">Fullstack Developer</h2>
+  <header className="header row flex">
+    <div className="header-img">
+      <img></img>
     </div>
+    <article className="article">
+      <h1>Product Review</h1>
+      <p>
+        But I must explain to you how all this mistaken idea of denouncing
+        pleasure and praising pain was born and I will give you a complete
+        account of the system, and expound the actual teachings of the great
+        explorer of the truth, the master-builder of human happines.
+      </p>
+    </article>
   </header>
 );
 

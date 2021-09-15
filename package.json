@@ -30,7 +30,6 @@
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-plugin-sitemap": "^3.0.0",
-    "gatsby-plugin-typography": "^3.0.0",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-source-graphql": "^3.0.0",
     "gatsby-transformer-sharp": "^3.0.0",

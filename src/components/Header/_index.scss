@@ -1,41 +1,17 @@
-.portfolio-header {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.header {
+  padding: 147px;
+  @include grid;
+  .header-img {
+    min-width: 464px;
+    height: 281px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
   }
-
-  .background {
-    position: absolute;
-    left: 0;
-    z-index: -1;
-  }
-
-  .profile-logo {
-    height: 50%;
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    margin-top: 5%;
-    border-radius: 100%;
-  }
-
-  .portfolio-title {
-    font-weight: 500;
-    font-size: 72px;
-    line-height: 84px;
-    text-align: center;
-  }
-
-  .header-title {
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 42px;
-  }
-  
-  .header-job-title {
-    font-weight: 100;
-    font-size: 26px;
+  .article {
+    height: 400px;
+    width: 400px;
+    padding-left: 126px;
   }
 }

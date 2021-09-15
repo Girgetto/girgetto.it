@@ -1,33 +1,6 @@
-@import "../components";
+@import "./utilities/_global_variables";
+@import "./base/_reset";
+@import "./base/_typography";
+@import "./layout/_grid";
 @import "../templates";
-@import "../config/global_variables";
-
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-.App {
-  margin: 0 10%;
-}
-
-a {
-  color: var(--textNormal);
-  font-size: 18px;
-}
-
-.flex {
-  display: flex;
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.space {
-  justify-content: space-between;
-}
-
-.row {
-  margin: 0 0 15% 0;
-}
+@import "../components";

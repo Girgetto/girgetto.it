@@ -1,6 +1,9 @@
-footer {
-  display: block;
-  height: 40px;
-  color: black;
-  text-align: center;
+.footer {
+  padding: 147px 147px;
+
+  .social-links {
+    width: 115px;
+    @include grid;
+    justify-content: space-between;
+  }
 }

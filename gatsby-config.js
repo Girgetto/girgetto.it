@@ -4,26 +4,20 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Giorgio Grassini",
+    title: "girgetto.it",
     author: `Giorgio Grassini`,
-    description: `Personal blog by Giorgio Grassini.`,
-    siteUrl: `https://girgetto.github.io/portfolio/`,
+    description: `girgetto.it personal blog`,
+    siteUrl: `https://girgetto.it`,
     social: {
-      twitter: `__Giorgio_`,
+      twitter: `GirgettoIT`,
     },
   },
-  pathPrefix: `/portfolio`,
+  pathPrefix: `/`,
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-fontawesome-css",
-    {
-      resolve: "gatsby-plugin-google-gtag",
-      options: {
-        trackingIds: ["G-94BPMNJK7N"],
-      },
-    },
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-manifest",
@@ -51,12 +45,6 @@ module.exports = {
           Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
         },
         fetchOptions: {},
-      },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
       },
     },
     {

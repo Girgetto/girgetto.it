@@ -1,0 +1,38 @@
+$font-family: "Inter";
+$small-font-size: 14px;
+
+@font-face {
+  font-family: $font-family;
+  src: url("/fonts/inter-black.ttf") format("ttf");
+}
+
+body {
+  font-family: $font-family;
+}
+
+a {
+  text-decoration: none;
+  color: $textLink;
+  font-size: $small-font-size;
+  font-weight: 400;
+}
+.is-selected {
+  background-color: $primary;
+  color: $textSelected !important;
+}
+
+a:visited {
+  color: $textLinkVisited;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  color: $smallText;
+  line-height: 24px;
+}
+
+button {
+  font-weight: 600;
+  font-size: 12px;
+}
