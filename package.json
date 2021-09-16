@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@deckdeckgo/highlight-code": "^3.3.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
@@ -30,6 +31,7 @@
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-plugin-sitemap": "^3.0.0",
+    "gatsby-remark-highlight-code": "^3.0.1",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-source-graphql": "^3.0.0",
     "gatsby-transformer-remark": "^4.10.0",
