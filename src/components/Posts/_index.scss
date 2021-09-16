@@ -1,5 +1,5 @@
 .container {
-  padding-left: 147px;
+  padding-left: $sidePadding;
   @include grid;
   justify-content: space-between;
   width: 80%;

@@ -1,8 +1,9 @@
+/* eslint react/jsx-pascal-case: 0 */
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../layout"
-import Seo from "../components/seo"
+import Layout from "../../layout"
+import SEO from "../../components/SEO"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -11,7 +12,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo
+      <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />

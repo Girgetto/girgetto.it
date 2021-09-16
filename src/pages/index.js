@@ -9,7 +9,6 @@ const IndexPage = ({ location }) => (
       <Components.SEO title="Home" />
       <Components.Header />
       <Components.Posts />
-      <Components.Footer />
     </Layout>
   );
 

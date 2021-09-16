@@ -1,5 +1,7 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
+
+import rectangle from "../../images/rectangle.png";
 
 const Header = () => {
   const {
@@ -14,7 +16,9 @@ const Header = () => {
               frontmatter {
                 title
                 description
-                image
+              }
+              fields {
+                slug
               }
             }
           }
@@ -28,13 +32,13 @@ const Header = () => {
   return (
     <header className="header row flex">
       <div className="header-img">
-        <img alt="main-post" src={post.node.frontmatter.image}/>
+        <img alt="main-post" src={rectangle} />
       </div>
       <article className="article">
-        <h1>{post.node.frontmatter.title}</h1>
-        <p>
-          {post.node.frontmatter.description}
-        </p>
+        <Link to={post.node.fields.slug}>
+          <h1>{post.node.frontmatter.title}</h1>
+        </Link>
+        <p>{post.node.frontmatter.description}</p>
       </article>
     </header>
   );

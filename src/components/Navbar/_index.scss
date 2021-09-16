@@ -1,6 +1,6 @@
 #header {
   @include grid;
-  padding: 62px 147px;
+  padding: 62px $sidePadding;
   align-items: center;
 
   #links {

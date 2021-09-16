@@ -17,6 +17,9 @@ export default function Posts() {
                 title
                 description
               }
+              fields {
+                slug
+              }
             }
           }
         }
@@ -27,7 +30,7 @@ export default function Posts() {
   return (
     <div className="container">
       {edges.map((post) => (
-        <Card {...post} />
+        <Card {...post} key={post.node.id}/>
       ))}
     </div>
   );
