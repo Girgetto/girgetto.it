@@ -30,19 +30,5 @@
     flex-direction: column;
     justify-content: space-between;
     height: 180px;
-
-    button {
-      background-color: $primary;
-      height: 36px;
-      width: 106px;
-      left: 16px;
-      top: 123px;
-      border-radius: 4px;
-      border: none;
-      color: $textSelected;
-      &:hover {
-        cursor: pointer;
-      }
-    }
   }
 }

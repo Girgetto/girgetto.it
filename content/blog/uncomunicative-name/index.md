@@ -6,33 +6,33 @@ description: Case of uncommunicative names
 
 Let's see same cases of uncommunicative name
 
-> Use meaningful and pronounceable variable names
+## Use meaningful and pronounceable variable names
 
 Try to find descriptive names for variable names
 
-bad ❌:
+BAD ❌
 
 ```js
 const yyyymmdstr = () => moment().format("YYYY/MM/DD")
 ```
 
-good ✅:
+GOOD ✅
 
 ```js
 const currentDate = moment().format("YYYY/MM/DD")
 ```
 
-> Use searchable names
+## Use searchable names
 
 Give to constants name that specify what they are.
 
-bad ❌:
+BAD ❌
 
 ```js
 const timer = () => setTimeout(blastOff, 86400000) //what's 86400000???
 ```
 
-good ✅:
+GOOD ✅
 
 ```js
 const timer = () => {
@@ -41,11 +41,11 @@ const timer = () => {
 }
 ```
 
-> Use explanatory variables
+## Use explanatory variables
 
 It's important that the code we do write is readable and searchable. By not naming variables that end up being meaningful for understanding our program, we hurt our readers. Make your names searchable.
 
-bad ❌:
+BAD ❌
 
 ```js
 const getAddress = () => {
@@ -58,7 +58,7 @@ const getAddress = () => {
 }
 ```
 
-good ✅:
+GOOD ✅
 
 ```js
 const address = () => {
@@ -69,11 +69,11 @@ const address = () => {
 }
 ```
 
-> Avoid Mental Mapping
+## Avoid Mental Mapping
 
 Explicit is better than implicit, for example don't use just letters when your are iterating a an array 
 
-bad ❌:
+BAD ❌
 
 ```js
 const location = () => {
@@ -90,7 +90,7 @@ const location = () => {
 }
 ```
 
-good ✅:
+GOOD ✅
 
 ```js
 const locations = () => {
@@ -106,11 +106,11 @@ const locations = () => {
 }
 ```
 
-> Give usefully name to functions
+## Give usefully name to functions
 
 When you declare functions try to decelerate with descriptive names 
 
-bad ❌:
+BAD ❌
 
 ```js
 const p = (a, b) => sqrt(pow(a, 2) + pow(b, 2))
@@ -122,7 +122,7 @@ const f = n =>
   )
 ```
 
-good ✅:
+GOOD ✅
 
 ```js
 const pythagorasTheorem = (cathetus1, cathetus2) =>

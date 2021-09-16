@@ -1,3 +1,48 @@
 .blog-post {
-  padding: $sidePadding;
+  padding: 0 $sidePadding;
+  width: 680px;
+  margin: 0 auto;
+  img {
+    max-width: 680px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 200;
+    &.date {
+      font-size: 12px;
+    }
+  }
+  code {
+    background-color: $gray200;
+    border-radius: 4px;
+    padding: 0 8px;
+  }
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D";
+  }
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  blockquote p {
+    display: inline;
+  }
+  span {
+    font-size: 24px;
+  }
 }

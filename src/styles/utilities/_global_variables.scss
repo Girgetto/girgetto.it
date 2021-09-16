@@ -4,5 +4,15 @@ $textLink: #000;
 $primary: #66cb9f;
 $textLinkVisited: #000;
 $smallText: #425466;
-$gray200: #E2E8F0;
+$gray200: #e2e8f0;
 $sidePadding: 147px;
+$font-family: "Inter";
+$small-font-size: 14px;
+$medium-font-size: 18px;
+$big-font-size: 32px;
+$post-font-size: 21px;
+
+:root {
+  --deckgo-highlight-code-font-size: 16px;
+  --deckgo-highlight-code-line-height: 32px;
+}
