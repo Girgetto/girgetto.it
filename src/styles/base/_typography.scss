@@ -16,10 +16,6 @@ a {
   font-size: $small-font-size;
   font-weight: 400;
 }
-.is-selected {
-  background-color: $primary;
-  color: $textSelected !important;
-}
 
 a:visited {
   color: $textLinkVisited;

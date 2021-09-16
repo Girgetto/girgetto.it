@@ -2,7 +2,7 @@
   @include grid;
   padding: 62px 147px;
   align-items: center;
-  
+
   #links {
     text-align: center;
     flex-grow: 0.8;
@@ -10,6 +10,13 @@
       padding: 6px 12px;
       border-radius: 1000px;
       margin: 24px;
+      &:hover {
+        background-color: $gray200;
+      }
+      &.is-selected {
+        background-color: $primary;
+        color: $textSelected;
+      }
     }
   }
 }
