@@ -1,20 +1,16 @@
 import React from "react";
 
+import rectangle from '../../images/rectangle.png'
+
 const Card = ({ node }) => {
   return (
     <div className="card" key={node.id}>
-      <img
-        alt="posts"
-        loading="lazy"
-        id="image"
-        src={
-          node.frontmatter.image ||
-          "https://res.cloudinary.com/practicaldev/image/fetch/s--IgWkwrvX--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3n3lw4nkuhfd413e8yhs.png"
-        }
-      />
+      <img alt="posts" loading="lazy" id="image" src={node.frontmatter.image || rectangle} />
       <header className="description">
-        <h5>{node.frontmatter.title}</h5>
-        <p>{node.frontmatter.description}</p>
+        <div className="section">
+          <h5>{node.frontmatter.title}</h5>
+          <p>{node.frontmatter.description}</p>
+        </div>
         <button>Learn more</button>
       </header>
     </div>
