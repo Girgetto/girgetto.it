@@ -4,7 +4,7 @@ date: "2020-11-27"
 description: Systemic introduction
 ---
 
-# What is Systemic?
+# What is Systemic?
 
 In order to understand what Systemic is we need to understand what dependency injections means. Dependency injection (DI) is a technique in which an object receives other objects that it depends on. These other objects are called dependencies. Modern dependency injection frameworks and libraries provide us the possibility to pass dependencies as parameters or references.
 
@@ -12,7 +12,7 @@ In order to understand what Systemic is we need to understand what dependency in
 
 Systemic is not a framework, it's a lean and un-opinionated library that takes care of creating a dependency tree wiring together the different pieces your code is made of. Systemic does not force you to define things in a certain way and does not tell you how to code your software pieces, what it does is foster an organic growth of an app during its development promoting the usage of the practices defined in [twelve-factor app methodology](https://12factor.net/).
 
-# Systemic and trains
+# Systemic and trains
 We at Guidesmiths are used to taking advantage of systemic in order to develop our microservices. Let's imagine our microservice as a train shipping value to the customer, we can then decide to bring value in one of the following two ways:
 
 1. Bad - We can ship our code and its functionalities all together within a unique big coach
@@ -34,14 +34,14 @@ What do we need to do? Let's start with the Systemic's 4 main concepts
 3. Components - The train's coaches
 4. Dependencies - The unions between coaches
 
-# System
+# System
 A Systemic based service is a system where all your components and dependencies will be in place and ready to be used.
 
 A system manifest is the Systemic way of defining what the system is and of which components it is made of.
 
 To add a component you need only to use the `.add()` method like this:
 
-###### *Documentation [here](https://guidesmiths.github.io/systemic/#/?id=define-the-system)*
+*Documentation [here](https://guidesmiths.github.io/systemic/#/?id=define-the-system)*
 
 When you start the system, systemic iterates through all the components, starting them in the order derived from the dependency graph with `await system.start()`.
 
@@ -51,7 +51,7 @@ When you stop the system `await system.stop()`, systemic iterates through all th
 
 A runner is a simple function which executes the start function of our system, it's like a locomotive which gives power to start the train
 
-###### *Documentation code [here](https://guidesmiths.github.io/systemic/#/?id=runners)*
+*Documentation code [here](https://guidesmiths.github.io/systemic/#/?id=runners)*
 
 You can also use runners already created:
 
@@ -62,7 +62,7 @@ You can also use runners already created:
 
 A component in our system is nothing more than a subsystem that must be structured as a function returning an object with two asynchronous property functions to start and stop it, like if all the coaches are available to be started and stopped whenever they need.
 
-###### *Documentation [here](https://guidesmiths.github.io/systemic/#/?id=components)*
+*Documentation [here](https://guidesmiths.github.io/systemic/#/?id=components)*
 
 # Dependencies
 
@@ -76,7 +76,7 @@ Then at the start up time the component will receive the full dependency object 
 
 Let's try to explain this with an example:
 
-###### *Documentation [here](https://guidesmiths.github.io/systemic/#/?id=dependencies)*
+*Documentation [here](https://guidesmiths.github.io/systemic/#/?id=dependencies)*
 
 In this example in the start function of the mongo component will be injected a property which is the object returned from the start function of the config component. This is the way in which components can rely on each other.
 
@@ -93,7 +93,7 @@ And what about if I want to:
 - Include a coach from another train → [including-components-from-another-system](https://guidesmiths.github.io/systemic/#/?id=including-components-from-another-system)
 - Create a group → [grouping-components](https://guidesmiths.github.io/systemic/#/?id=grouping-components)
 
-# The systemic ecosystem
+# The systemic ecosystem
 A lot of components that can be use with systemic may be already created and shipped as npm packages like: [systemic-rabbitmq](https://www.npmjs.com/package/systemic-rabbitmq) or [systemic-mongodb](https://www.npmjs.com/package/systemic-mongodb)
 
 # Yo systemic

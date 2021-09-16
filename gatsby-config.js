@@ -14,6 +14,7 @@ module.exports = {
   },
   pathPrefix: `/`,
   plugins: [
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-sass",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",

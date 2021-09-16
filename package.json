@@ -30,7 +30,7 @@
     "gatsby-plugin-sass": "^4.0.2",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^3.0.0",
-    "gatsby-plugin-sitemap": "^3.0.0",
+    "gatsby-plugin-sitemap": "^4.9.0",
     "gatsby-remark-highlight-code": "^3.0.1",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-source-graphql": "^3.0.0",
