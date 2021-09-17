@@ -1,14 +1,18 @@
 .header {
   .header-img {
     img {
-      object-fit:fill;
+      object-fit: fill;
       width: 100%;
+    }
+    .main-post {
+      width: 462px;
+      height: 284px;
     }
   }
   padding: 94px $sidePadding;
   @include grid;
   .header-img {
-    min-width: 464px;
+    width: 464px;
     height: 281px;
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
@@ -19,5 +23,25 @@
     height: 400px;
     width: 400px;
     padding-left: 126px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .header {
+    padding: $mobile-padding;
+    flex-direction: column;
+    .header-img {
+      width: $mobile-img-width;
+      img {
+        object-fit: fill;
+        width: $mobile-img-width;
+      }
+    }
+    .article {
+      margin-top: 32px;
+      height: 400px;
+      width: 268px;
+      padding-left: 34px;
+    }
   }
 }

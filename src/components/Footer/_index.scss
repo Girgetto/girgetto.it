@@ -2,8 +2,16 @@
   padding: $sidePadding $sidePadding;
 
   .social-links {
-    width: 115px;
-    @include grid;
+    & > a {
+      padding-right: 24px;
+    }
     justify-content: space-between;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .footer {
+    padding: $mobile-padding;
+    width: $mobile-article-width;
   }
 }

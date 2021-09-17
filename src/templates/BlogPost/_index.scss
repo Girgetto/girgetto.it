@@ -46,3 +46,15 @@
     font-size: 24px;
   }
 }
+
+@media (max-width: $breakpoint-mobile) {
+  .blog-post {
+    padding: $mobile-padding;
+    width: $mobile-article-width;
+    margin: 0;
+
+    img {
+      width: $mobile-article-width;
+    }
+  }
+}

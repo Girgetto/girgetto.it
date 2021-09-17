@@ -10,7 +10,7 @@ const Card = ({ node }) => {
         <img alt="posts" loading="lazy" id="image" src={rectangle} />
         <header className="description">
           <div className="section">
-            <h5>{node.frontmatter.title}</h5>
+            <h2>{node.frontmatter.title}</h2>
             <p>{node.frontmatter.description}</p>
           </div>
         </header>

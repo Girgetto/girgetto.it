@@ -5,3 +5,14 @@
   width: 80%;
   flex-wrap: wrap;
 }
+
+@media (max-width: $breakpoint-mobile) {
+  .container {
+    padding: $mobile-padding;
+    flex-direction: column;
+
+    .card {
+      width: $mobile-img-width;
+    }
+  }
+}
