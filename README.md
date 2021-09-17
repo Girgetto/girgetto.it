@@ -1,2 +1,2 @@
-# portfolio
-Github pages: https://girgetto.github.io/portfolio/ 
+# girgetto.it
+https://girgetto.it
