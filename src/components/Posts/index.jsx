@@ -9,7 +9,11 @@ export default function Posts() {
   } = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(skip: 1, limit: 4) {
+        allMarkdownRemark(
+          skip: 1
+          limit: 4
+          sort: { order: DESC, fields: frontmatter___date }
+        ) {
           edges {
             node {
               id
@@ -30,7 +34,7 @@ export default function Posts() {
   return (
     <div className="container">
       {edges.map((post) => (
-        <Card {...post} key={post.node.id}/>
+        <Card {...post} key={post.node.id} />
       ))}
     </div>
   );

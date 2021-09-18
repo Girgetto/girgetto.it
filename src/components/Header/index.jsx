@@ -9,7 +9,10 @@ const Header = () => {
   } = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(limit: 1) {
+        allMarkdownRemark(
+          limit: 1
+          sort: { order: DESC, fields: frontmatter___date }
+        ) {
           edges {
             node {
               id
