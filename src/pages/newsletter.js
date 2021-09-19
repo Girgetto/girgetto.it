@@ -32,7 +32,7 @@ const Newsletter = ({ location }) => {
   return (
     <Layout location={location}>
       <Components.SEO title="Newsletter" />
-      <div class="container">
+      <div className="container">
         {edges.map((post) => (
           <Card {...post} key={post.node.id} />
         ))}
