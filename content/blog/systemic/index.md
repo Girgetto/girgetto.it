@@ -1,110 +1,115 @@
 ---
-title: "Systemic: the silver bullet to develop perfect microservices in Node.JS."
+title: "Systemic: solución milagrosa para desarrollar microservicios perfectos en Node.JS"
 date: "2020-11-27"
-description: Systemic introduction
+description: Systemic no es un framework, es un biblioteca que se encarga de crear un árbol de dependencias conectando las diferentes piezas de las que está hecho su código.
+img: https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1pbmltYWwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60
 ---
 
-# What is Systemic?
+![image](https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1pbmltYWwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)
 
-In order to understand what Systemic is we need to understand what dependency injections means. Dependency injection (DI) is a technique in which an object receives other objects that it depends on. These other objects are called dependencies. Modern dependency injection frameworks and libraries provide us the possibility to pass dependencies as parameters or references.
+<sub><sup>Photo by [Lukas Blazek](https://unsplash.com/@goumbik) on Unsplash<sub><sup>
 
-**_"Systemic is a minimal dependency injection library for NodeJS"_**
+# Que es Systemic?
 
-Systemic is not a framework, it's a lean and un-opinionated library that takes care of creating a dependency tree wiring together the different pieces your code is made of. Systemic does not force you to define things in a certain way and does not tell you how to code your software pieces, what it does is foster an organic growth of an app during its development promoting the usage of the practices defined in [twelve-factor app methodology](https://12factor.net/).
+Para comprender qué es Systemic, debemos comprender qué significan las inyecciones de dependencia. La inyección de dependencia (DI) es una técnica en la que un objeto recibe otros objetos de los que depende. Estos otros objetos se denominan dependencias. Los marcos y bibliotecas de inyección de dependencias modernos nos brindan la posibilidad de pasar dependencias como parámetros o referencias.
 
-# Systemic and trains
-We at Guidesmiths are used to taking advantage of systemic in order to develop our microservices. Let's imagine our microservice as a train shipping value to the customer, we can then decide to bring value in one of the following two ways:
+**_"Systemic es una biblioteca de inyección de dependencia mínima para NodeJS"_**
 
-1. Bad - We can ship our code and its functionalities all together within a unique big coach
+Systemic no es un framework, es una biblioteca que se encarga de crear un árbol de dependencias conectando las diferentes piezas de las que está hecho su código. Systemic no te obliga a definir las cosas de una determinada manera y no te dice cómo codificar tus piezas de software, lo que hace es fomentar un crecimiento orgánico de una aplicación durante su desarrollo promoviendo el uso de las prácticas definidas en [twelve-factor app methodology](https://12factor.net/).
 
-2. Good - We can ship our code and its functionalities trying to split them as much as possible according to the responsibility they have
+# Systemic y trenes
+En Guidesmiths estamos acostumbrados a aprovechar lo Systemic para desarrollar nuestros microservicios. Imaginemos nuestro microservicio como un valor de envío de tren para el cliente, luego podemos decidir aportar valor de una de las dos formas siguientes:
 
-With the first approach we would put in one coach all the tools (passengers) that we are using (express, mongo, rabbit MQ, etc…), now imagine we want to change, modify, move any of the passengers that we have into that coach. We would enter and see a lot of passengers together, and we'll need to check seat by seat to find the passengers which we are looking for!
+1. Malo: podemos enviar nuestro código y sus funcionalidades todos juntos dentro de un gran vagón único
+
+2. Good - Podemos enviar nuestro código y sus funcionalidades intentando dividirlos lo máximo posible según la responsabilidad que tengan
+
+Con el primer acercamiento pondríamos en un vagón todas las herramientas (pasajeros) que estemos usando (express, mongo, rabbit MQ, etc…), ahora imaginamos que queremos cambiar, modificar, mover cualquiera de los pasajeros que tengamos en ese vagón. Entraríamos y veríamos muchos pasajeros juntos, ¡y tendremos que revisar asiento por asiento para encontrar los pasajeros que estamos buscando!
 
 ![no-systemic-train](https://dev-to-uploads.s3.amazonaws.com/i/9i8kmll0a82zmqigz4mj.jpg)
 
-With the second approach we would put all the responsibility-related passengers in a specific coach so adding, modifying or removing them would be easier. Systemic will help us a lot in doing this.
+Con el segundo enfoque, colocaríamos a todos los pasajeros relacionados con la responsabilidad en un vagón específico, por lo que agregarlos, modificarlos o eliminarlos sería más fácil. Systemic nos ayudará mucho a hacer esto.
 
 ![systemic-train](https://dev-to-uploads.s3.amazonaws.com/i/10jh2qgind4vbtssutyk.jpg)
 
-What do we need to do? Let's start with the Systemic's 4 main concepts
+¿Que necesitamos hacer? Comencemos con los 4 conceptos principales de Systemic
 
-1. System - Our train
-2. Runners - Our locomotive
-3. Components - The train's coaches
-4. Dependencies - The unions between coaches
+1. System  -  Nuestro tren
+2. Runners  - Nuestra locomotora
+3. Components  - Los vagones del tren
+4. Dependencies  -  La que uno los vagones
 
 # System
-A Systemic based service is a system where all your components and dependencies will be in place and ready to be used.
+Un servicio basado en Systemic es un sistema en el que todos sus componentes y dependencias estarán en su lugar y listos para ser utilizados.
 
-A system manifest is the Systemic way of defining what the system is and of which components it is made of.
+Un manifiesto de sistema es la forma sistémica de definir qué es el sistema y de qué componentes está compuesto.
 
-To add a component you need only to use the `.add()` method like this:
+Para agregar un componente solo necesita usar el método `.add ()` como este:
 
 *Documentation [here](https://guidesmiths.github.io/systemic/#/?id=define-the-system)*
 
-When you start the system, systemic iterates through all the components, starting them in the order derived from the dependency graph with `await system.start()`.
+Cuando inicia el sistema, systemic itera a través de todos los componentes, iniciándolos en el orden derivado del gráfico de dependencia con `await system.start ()`.
 
-When you stop the system `await system.stop()`, systemic iterates through all the components stopping them in the reverse order.
+Cuando detiene el sistema `await system.stop ()`, systemic itera a través de todos los componentes deteniéndolos en el orden inverso.
 
 # Runner
 
-A runner is a simple function which executes the start function of our system, it's like a locomotive which gives power to start the train
+A runner es una función simple que ejecuta la función de arranque de nuestro sistema, es como una locomotora que da energía para arrancar el tren.
 
 *Documentation code [here](https://guidesmiths.github.io/systemic/#/?id=runners)*
 
-You can also use runners already created:
+También puede utilizar corredores ya creados:
 
 - [Service Runner](https://github.com/guidesmiths/systemic-service-runner)
 - [Domain Runner](https://github.com/guidesmiths/systemic-domain-runner)
 
 # Components
 
-A component in our system is nothing more than a subsystem that must be structured as a function returning an object with two asynchronous property functions to start and stop it, like if all the coaches are available to be started and stopped whenever they need.
+Un componente de nuestro sistema no es más que un subsistema que debe estructurarse como una función que devuelve un objeto con dos funciones de propiedad asíncronas para iniciarlo y detenerlo, como si todos los coaches estuvieran disponibles para ser iniciados y detenidos cuando lo necesiten.
 
 *Documentation [here](https://guidesmiths.github.io/systemic/#/?id=components)*
 
 # Dependencies
 
-What happens if we need to pass information between coaches?
+¿Qué pasa si necesitamos pasar información entre vagones?
 
-As we have done for the main system we have to define a manifest for each one of its subsystems (components) in order to specify who depends on whom, it's here where we have to use the `.dependsOn()` method right after the `.add()` method.
+Como hemos hecho para el sistema principal tenemos que definir un manifiesto para cada uno de sus subsistemas (componentes) con el fin de especificar quién depende de quién, es aquí donde tenemos que usar el método `.dependsOn ()` justo después del Método `.add ()`.
 
-We can pass as an argument to that method the string representing the name of the component we depend on.
+Podemos pasar como argumento a ese método la cadena que representa el nombre del componente del que dependemos.
 
-Then at the start up time the component will receive the full dependency object of the component wired to it in the `.dependsOn()` method.
+Luego, en el momento de inicio, el componente recibirá el objeto de dependencia completo del componente conectado a él en el método `.dependsOn ()`.
 
-Let's try to explain this with an example:
+Intentemos explicar esto con un ejemplo:
 
 *Documentation [here](https://guidesmiths.github.io/systemic/#/?id=dependencies)*
 
-In this example in the start function of the mongo component will be injected a property which is the object returned from the start function of the config component. This is the way in which components can rely on each other.
+En este ejemplo, en la función de inicio del componente mongo se inyectará una propiedad que es el objeto devuelto por la función de inicio del componente de configuración. Esta es la forma en que los componentes pueden depender entre sí.
 
 ![complete-train](https://dev-to-uploads.s3.amazonaws.com/i/2bukl6rn8hey0de5ubfh.jpg)
 
-This is a basic system represented as a train
+Este es un sistema básico representado como un tren.
 
-And what about if I want to:
-- Wrap components together → [Bootstraping-components](https://guidesmiths.github.io/systemic/#/?id=bootstraping-components)
+Y si quiero:
+- Envuelva los componentes juntos → [Bootstraping-components](https://guidesmiths.github.io/systemic/#/?id=bootstraping-components)
 - Aliasing a coach → [mapping-dependencies](https://guidesmiths.github.io/systemic/#/?id=mapping-dependencies)
-- Injecting only a sub part of a component → [scoped-dependencies](https://guidesmiths.github.io/systemic/#/?id=scoped-dependencies)
-- Override a coach → [overriding components](https://guidesmiths.github.io/systemic/#/?id=overriding-components)
-- Remove a coach → [removing-components](https://guidesmiths.github.io/systemic/#/?id=removing-components)
-- Include a coach from another train → [including-components-from-another-system](https://guidesmiths.github.io/systemic/#/?id=including-components-from-another-system)
-- Create a group → [grouping-components](https://guidesmiths.github.io/systemic/#/?id=grouping-components)
+- Inyectar solo una subparte de un componente → [scoped-dependencies](https://guidesmiths.github.io/systemic/#/?id=scoped-dependencies)
+- Anular un vagón → [overriding components](https://guidesmiths.github.io/systemic/#/?id=overriding-components)
+- Remover un vagón → [removing-components](https://guidesmiths.github.io/systemic/#/?id=removing-components)
+- Incluir una vagón de otro tren → [including-components-from-another-system](https://guidesmiths.github.io/systemic/#/?id=including-components-from-another-system)
+- Crear un grupo → [grouping-components](https://guidesmiths.github.io/systemic/#/?id=grouping-components)
 
-# The systemic ecosystem
-A lot of components that can be use with systemic may be already created and shipped as npm packages like: [systemic-rabbitmq](https://www.npmjs.com/package/systemic-rabbitmq) or [systemic-mongodb](https://www.npmjs.com/package/systemic-mongodb)
+# El ecosistema Systemic
+Es posible que una gran cantidad de componentes que se pueden usar con systemic ya se hayan creado y enviado como paquetes npm como: [systemic-rabbitmq](https://www.npmjs.com/package/systemic-rabbitmq) or [systemic-mongodb](https://www.npmjs.com/package/systemic-mongodb)
 
 # Yo systemic
-Systemic has its own [yeoman generator](https://github.com/guidesmiths/generator-systemic) to speed up the creation of a new project ready to be filled in with your own business logic. It will create a system with a bunch of ready to be used capabilities like components, config, docs, test, docker's files, eslint's files. Like this [codesandbox](https://codesandbox.io/s/zen-thunder-0uuqj?file=/index.js).
+Systemic tiene su propia [yeoman generator](https://github.com/guidesmiths/generator-systemic) para acelerar la creación de un nuevo proyecto listo para ser completado con su propia lógica empresarial. Creará un sistema con un montón de capacidades listas para ser utilizadas como componentes, configuración, documentos, prueba, archivos de docker, archivos de eslint. Como esto [codesandbox](https://codesandbox.io/s/zen-thunder-0uuqj?file=/index.js).
 
-If you need to see an example with some business logic already in place you can use the flag `--showcase` and check a real-word example.
+Si necesita ver un ejemplo con alguna lógica de negocios ya implementada, puede usar el comando `--showcase` y ver un ejemplo de palabra real.
 
-# Conclusions
-This was just a little chat about what systemic is capable of, in a real-world scenario we can imagine a Systemic based application to be like some kind of huge train system, where each train, coach and passenger can communicate, share information start or stop whenever they need.
+# Conclusiones
+Esto fue solo una pequeña charla sobre lo que systemic es capaz de hacer, en un escenario del mundo real podemos imaginar una aplicación basada en Systemic como una especie de enorme sistema de trenes, donde cada tren, autocar y pasajero puede comunicarse, compartir información, comenzar o deténgase cuando lo necesiten.
 
-There may be some downside, Systemic may not work in the way you are used to organizing your code and its ecosystem may still miss something. That's why I wrote this article, I wanted to let you know Systemic is out there, and we can grow it together.
+Puede haber algunos inconvenientes, Systemic puede no funcionar de la forma en que está acostumbrado a organizar su código y su ecosistema aún puede perder algo. Es por eso que escribí este artículo, quería hacerle saber que Systemic está ahí fuera y que podemos cultivarlo juntos.
 
-Other resources:
-How your train can reach the [88Mph](https://matteodipaolo.github.io/Reaching88MphWithSystemic/#/) by [Matteo Di Paolantonio](https://dev.to/matteodipaolo)🚆
+Otros recursos:
+¿Cómo puede llegar su tren al [88Mph](https://matteodipaolo.github.io/Reaching88MphWithSystemic/#/) de [Matteo Di Paolantonio](https://dev.to/matteodipaolo)🚆

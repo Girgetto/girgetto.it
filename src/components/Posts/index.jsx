@@ -11,7 +11,7 @@ export default function Posts() {
       query {
         allMarkdownRemark(
           skip: 1
-          limit: 4
+          limit: 3
           sort: { order: DESC, fields: frontmatter___date }
         ) {
           edges {
@@ -20,6 +20,7 @@ export default function Posts() {
               frontmatter {
                 title
                 description
+                img
               }
               fields {
                 slug

@@ -1,7 +1,7 @@
 ---
-title: Nombres de variables no comunicativas
+title: Uncommunicative name
 date: "2020-01-15"
-description: Casos de nombres no comunicativos
+description: Case of uncommunicative names
 img: https://images.unsplash.com/photo-1592296429945-93008c7e5a59?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80
 ---
 
@@ -9,35 +9,35 @@ img: https://images.unsplash.com/photo-1592296429945-93008c7e5a59?ixid=MnwxMjA3f
 
 <sub><sup>Photo by [okeykat](https://unsplash.com/@okeykat) on Unsplash<sub><sup>
 
-Veamos algunos casos de nombre poco comunicativo.
+Let's see some cases of uncommunicative name
 
 ## Use meaningful and pronounceable variable names
 
-Utilice nombres de variables significativos y pronunciables
+Try to find descriptive names for variable names
 
-MALO ❌
+BAD ❌
 
 ```js
 const yyyymmdstr = () => moment().format("YYYY/MM/DD")
 ```
 
-BUENO ✅
+GOOD ✅
 
 ```js
 const currentDate = moment().format("YYYY/MM/DD")
 ```
 
-## Utilice nombres que se puedan buscar
+## Use searchable names
 
-Dar a las constantes nombres que especifiquen lo que son.
+Give to constants name that specify what they are.
 
-MALO ❌
+BAD ❌
 
 ```js
 const timer = () => setTimeout(blastOff, 86400000) //what's 86400000???
 ```
 
-BUENO ✅
+GOOD ✅
 
 ```js
 const timer = () => {
@@ -46,11 +46,11 @@ const timer = () => {
 }
 ```
 
-## Usa variables explicativas
+## Use explanatory variables
 
-Es importante que el código que escribimos sea legible y se pueda buscar. Al no nombrar variables que terminan siendo significativas para comprender nuestro programa, lastimamos a nuestros lectores. Haga que sus nombres se puedan buscar.
+It's important that the code we do write is readable and searchable. By not naming variables that end up being meaningful for understanding our program, we hurt our readers. Make your names searchable.
 
-MALO ❌
+BAD ❌
 
 ```js
 const getAddress = () => {
@@ -63,7 +63,7 @@ const getAddress = () => {
 }
 ```
 
-BUENO ✅
+GOOD ✅
 
 ```js
 const address = () => {
@@ -74,9 +74,9 @@ const address = () => {
 }
 ```
 
-## Evite el mapeo mental
+## Avoid Mental Mapping
 
-Explícito es mejor que implícito, por ejemplo, no use solo letras cuando esté iterando un array.
+Explicit is better than implicit, for example, don't use just letters when you are iterating an array 
 
 BAD ❌
 
@@ -95,7 +95,7 @@ const location = () => {
 }
 ```
 
-BUENO ✅
+GOOD ✅
 
 ```js
 const locations = () => {
@@ -111,11 +111,11 @@ const locations = () => {
 }
 ```
 
-## Dar nombre útil a las funciones
+## Give usefully name to functions
 
-Cuando declaras funciones, intenta desacelerar con nombres descriptivos
+When you declare functions try to decelerate with descriptive names 
 
-MALO ❌
+BAD ❌
 
 ```js
 const p = (a, b) => sqrt(pow(a, 2) + pow(b, 2))
@@ -127,7 +127,7 @@ const f = n =>
   )
 ```
 
-BUENO ✅
+GOOD ✅
 
 ```js
 const pythagorasTheorem = (cathetus1, cathetus2) =>

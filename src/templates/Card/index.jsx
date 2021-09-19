@@ -7,7 +7,12 @@ const Card = ({ node }) => {
   return (
     <Link to={node.fields.slug}>
       <div className="card">
-        <img alt="posts" loading="lazy" id="image" src={rectangle} />
+        <img
+          alt="posts"
+          loading="lazy"
+          id="image"
+          src={node.frontmatter.img || rectangle}
+        />
         <header className="description">
           <div className="section">
             <h2>{node.frontmatter.title}</h2>
