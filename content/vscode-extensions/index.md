@@ -3,6 +3,7 @@ title: 💻 5 extensiones útiles de VS Code para ayudarte con Javascript, React
 date: "2021-04-27"
 description: Esta es una lista de 5 extensiones y temas para VS Code que uso a menudo y encuentro útiles.
 img: https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1pbmltYWwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60
+type: post
 ---
 
 ![leone-venter-unsplash](https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1pbmltYWwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)

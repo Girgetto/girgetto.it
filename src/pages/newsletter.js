@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../layout";
 import * as Components from "../components";
 import { useStaticQuery, graphql } from "gatsby";
-import Card from '../templates/Card';
+import Card from "../templates/Card";
 
 const Newsletter = ({ location }) => {
   const {
@@ -11,7 +11,10 @@ const Newsletter = ({ location }) => {
   } = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+        allMarkdownRemark(
+          sort: { order: DESC, fields: frontmatter___date }
+          filter: { frontmatter: { type: { eq: "post" } } }
+        ) {
           edges {
             node {
               id
