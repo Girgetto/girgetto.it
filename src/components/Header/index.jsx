@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <header className="header row flex">
       <div className="header-img">
-        <img alt="main-post" src={post.node.frontmatter.img || rectangle} />
+        <img className="main-post-img" alt="main-post" src={post.node.frontmatter.img || rectangle} />
       </div>
       <article className="article">
         <Link to={post.node.fields.slug}>

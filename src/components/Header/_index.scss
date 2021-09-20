@@ -1,14 +1,14 @@
 .header {
   .header-img {
-    img {
+    .main-post-img {
       object-fit: fill;
-      width: 100%;
-      height: 100%;
+      width: 464px;
+      height: 281px;
+
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-sizing: border-box;
+      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
       border-radius: 26px;
-    }
-    .main-post {
-      width: 462px;
-      height: 284px;
     }
   }
   padding: 94px $sidePadding;
@@ -16,10 +16,6 @@
   .header-img {
     width: 464px;
     height: 281px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-sizing: border-box;
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
-    border-radius: 26px;
   }
   .article {
     height: 400px;
