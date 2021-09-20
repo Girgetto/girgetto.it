@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../layout";
 import * as Components from "../components";
 import { useStaticQuery, graphql } from "gatsby";
-import Card from "../templates/Card";
+import Card from "../components/Card";
 
 const Newsletter = ({ location }) => {
   const {

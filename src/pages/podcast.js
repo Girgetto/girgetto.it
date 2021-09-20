@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../layout";
 import * as Components from "../components";
-import Card from "../templates/Card";
+import Card from "../components/Card";
 import { useStaticQuery, graphql } from "gatsby";
 
 const Podcast = ({ location }) => {

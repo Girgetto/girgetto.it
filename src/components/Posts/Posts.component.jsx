@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Card from "../../templates/Card";
+import Card from "../Card";
 
 export default function Posts() {
   const {
