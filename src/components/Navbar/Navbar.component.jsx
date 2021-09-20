@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
 
 const links = [
   { link: "/", name: "Latest" },
@@ -18,7 +17,9 @@ const Navbar = ({ location }) => (
         <Link
           key={link}
           to={link}
-          className={"link" + (location.pathname === link ? " is-selected" : "")}
+          className={
+            "link" + (location.pathname === link ? " is-selected" : "")
+          }
         >
           {name}
         </Link>
@@ -28,7 +29,3 @@ const Navbar = ({ location }) => (
 );
 
 export default Navbar;
-
-Navbar.propTypes = {
-  location: PropTypes.shape(),
-};
