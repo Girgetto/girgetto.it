@@ -3,6 +3,7 @@ title: Shotgun surgery
 date: "2019-11-22"
 description: Shotgun Surgery refers to when a single change is made to multiple classes simultaneously.
 type: post
+lang: en
 ---
 
 Shotgun Surgery refers to when a single change is made to multiple classes simultaneously.

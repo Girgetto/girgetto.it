@@ -13,7 +13,7 @@ export default function Posts() {
           skip: 1
           limit: 3
           sort: { order: DESC, fields: frontmatter___date }
-          filter: { frontmatter: { type: { eq: "post" } } }
+          filter: { frontmatter: { lang: { eq: "es" }, type: { eq: "post"} } }
         ) {
           edges {
             node {
