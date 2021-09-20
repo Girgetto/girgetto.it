@@ -1,21 +1,19 @@
-.container {
+.post-container {
   padding-left: $sidePadding;
   @include grid;
-  justify-content: space-between;
-  width: 80%;
   flex-wrap: wrap;
 }
 
 @media (min-width: $breakpoint-mobile) {
-  .container {
-    .card {
-      min-width: 412px;
+  .post-container {
+    a {
+      width: 33%;
     }
   }
 }
 
 @media (max-width: $breakpoint-mobile) {
-  .container {
+  .post-container {
     padding: $mobile-padding;
     flex-direction: column;
 

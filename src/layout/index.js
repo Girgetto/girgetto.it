@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 
 import Navbar from "../components/Navbar";
@@ -17,8 +16,3 @@ const Layout = ({ location, children }) => {
 };
 
 export default Layout;
-
-Layout.propTypes = {
-  location: PropTypes.shape(),
-  children: PropTypes.arrayOf(PropTypes.shape()),
-};

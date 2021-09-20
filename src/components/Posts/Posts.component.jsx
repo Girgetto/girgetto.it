@@ -33,7 +33,7 @@ export default function Posts() {
   );
 
   return (
-    <div className="container">
+    <div className="post-container">
       {edges.map((post) => (
         <Card {...post} key={post.node.id} />
       ))}
