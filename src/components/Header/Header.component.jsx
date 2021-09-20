@@ -35,14 +35,12 @@ const Header = () => {
 
   return (
     <header className="header row flex">
-      <Link to={post.node.fields.slug}>
-        <div className="header-img">
-          <img
-            className="main-post-img"
-            alt="main-post"
-            src={post.node.frontmatter.img || rectangle}
-          />
-        </div>
+      <Link className="header-img-link" to={post.node.fields.slug}>
+        <img
+          className="main-post-img"
+          alt="main-post"
+          src={post.node.frontmatter.img || rectangle}
+        />
       </Link>
       <article className="article">
         <Link to={post.node.fields.slug}>
