@@ -7,7 +7,7 @@ type: podcast
 lang: es
 ---
 
-<iframe src="https://anchor.fm/girgetto/embed/episodes/Bootcamps-de-programacin-e17kemc" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://anchor.fm/girgetto/embed/episodes/Bootcamps-de-programacin-e17m6cl" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
 Podcast sobre los bootcamps, contestando ad algunas preguntas:
 
