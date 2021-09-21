@@ -5,6 +5,8 @@
       object-fit: fill;
       width: 100%;
       height: auto;
+      min-height: 98px;
+      min-width: 148px;
 
       border: 1px solid rgba(0, 0, 0, 0.08);
       box-sizing: border-box;
@@ -29,18 +31,22 @@
   .header {
     padding: $mobile-padding;
     flex-direction: column;
-    .header-img {
-      width: $mobile-img-width;
-      img {
-        object-fit: fill;
-        max-width: $mobile-img-width;
+    align-items: center;
+    .header-img-link {
+      width: 100%;
+      .header-img {
+        width: $mobile-img-width;
+        img {
+          object-fit: fill;
+          max-width: $mobile-img-width;
+        }
       }
     }
     .article {
       margin-top: 32px;
       height: 400px;
-      width: 268px;
-      padding-left: 34px;
+      width: 100%;
+      padding-left: 0px;
     }
   }
 }

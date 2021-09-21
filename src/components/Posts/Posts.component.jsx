@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Card from "../../templates/Card";
+import Card from "../Card";
 
 export default function Posts() {
   const {
@@ -13,6 +13,7 @@ export default function Posts() {
           skip: 1
           limit: 3
           sort: { order: DESC, fields: frontmatter___date }
+          filter: { frontmatter: { lang: { eq: "es" } } }
         ) {
           edges {
             node {

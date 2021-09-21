@@ -50,8 +50,8 @@
 @media (max-width: $breakpoint-mobile) {
   .blog-post {
     padding: $mobile-padding;
-    width: $mobile-article-width;
-    margin: 0;
+    width: 80%;
+    margin: 0 auto;
 
     img {
       width: $mobile-article-width;

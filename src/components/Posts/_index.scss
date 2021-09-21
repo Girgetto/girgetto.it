@@ -14,11 +14,12 @@
 
 @media (max-width: $breakpoint-mobile) {
   .post-container {
-    padding: $mobile-padding;
     flex-direction: column;
-
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
     .card {
-      width: $mobile-img-width;
+      margin: 12px auto;
     }
   }
 }

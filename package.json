@@ -1,8 +1,8 @@
 {
-  "name": "portfolio-gatsby",
+  "name": "girgetto.it",
   "version": "1.0.0",
   "private": true,
-  "description": "portfolio-gatsby",
+  "description": "girgetto.it",
   "author": "Giorgio Grassini",
   "keywords": [
     "gatsby"
@@ -15,22 +15,15 @@
   },
   "dependencies": {
     "@deckdeckgo/highlight-code": "^3.3.1",
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
     "gatsby": "^3.13.0",
-    "gatsby-plugin-bundle-stats": "^2.7.2",
-    "gatsby-plugin-fontawesome-css": "^1.0.0",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",
-    "gatsby-plugin-google-gtag": "^2.5.0",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-offline": "^4.13.0",
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-plugin-sass": "^4.0.2",
-    "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^3.0.0",
-    "gatsby-plugin-sitemap": "^4.9.0",
+    "gatsby-plugin-sitemap": "^4.10.0",
     "gatsby-remark-copy-linked-files": "^4.11.0",
     "gatsby-remark-highlight-code": "^3.0.1",
     "gatsby-remark-images": "^5.11.0",
@@ -40,12 +33,9 @@
     "gatsby-transformer-sharp": "^3.0.0",
     "jsdom": "^16.6.0",
     "react": "^17.0.1",
-    "react-cookie-consent": "^6.2.3",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-typography": "^0.16.19",
-    "sass": "^1.32.8",
-    "typography": "^0.16.19"
+    "sass": "^1.32.8"
   },
   "devDependencies": {
     "is-svg": ">=4.2.2"

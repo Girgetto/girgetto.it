@@ -20,6 +20,7 @@ const Header = () => {
                 title
                 description
                 img
+                lang
               }
               fields {
                 slug

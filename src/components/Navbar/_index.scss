@@ -29,5 +29,13 @@
     a {
       padding: $mobile-padding;
     }
+    #links {
+      position: fixed;
+      bottom: 0;
+      background-color: #fff;
+      padding: 40px 0;
+      margin: 0 auto;
+      width: 100%;
+    }
   }
 }
