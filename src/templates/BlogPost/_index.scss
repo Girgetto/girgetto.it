@@ -2,6 +2,11 @@
   padding: 0 $sidePadding;
   width: 680px;
   margin: 0 auto;
+  a {
+    text-decoration:underline;
+    font-size: $medium-font-size;
+    color: blue;
+  }
   img {
     max-width: 680px;
   }

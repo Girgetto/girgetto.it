@@ -1,14 +1,10 @@
 .post-container {
-  padding-left: $sidePadding;
+  padding: 0 $sidePadding;
+  justify-content: space-between;
   @include grid;
   flex-wrap: wrap;
-}
-
-@media (min-width: $breakpoint-mobile) {
-  .post-container {
-    a {
-      width: 33%;
-    }
+  .card {
+    margin: 16px;
   }
 }
 
