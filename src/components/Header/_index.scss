@@ -1,12 +1,18 @@
 .header {
+  @include grid;
+  padding: 0 $sidePadding;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin-bottom: 36px;
   .header-img-link {
     width: 50%;
     .main-post-img {
       object-fit: fill;
       width: 100%;
       height: auto;
-      min-height: 98px;
-      min-width: 148px;
+      min-height: 220px;
+      min-width: 320px;
 
       border: 1px solid rgba(0, 0, 0, 0.08);
       box-sizing: border-box;
@@ -14,16 +20,12 @@
       border-radius: 26px;
     }
   }
-  padding: 94px $sidePadding;
-  @include grid;
   .header-img {
     width: 464px;
     height: 281px;
   }
   .article {
-    height: 400px;
     width: 400px;
-    padding-left: $sidePadding;
   }
 }
 
