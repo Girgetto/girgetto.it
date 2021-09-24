@@ -52,6 +52,14 @@
   }
 }
 
+.table-of-content {
+  position: fixed;
+  right: 50px;
+  ul {
+    list-style: none;
+  }
+}
+
 @media (max-width: $breakpoint-mobile) {
   .blog-post {
     padding: $mobile-padding;

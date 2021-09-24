@@ -40,6 +40,9 @@ module.exports = {
         plugins: [
           `gatsby-remark-copy-linked-files`,
           {
+            resolve: `gatsby-remark-autolink-headers`,
+          },
+          {
             resolve: `gatsby-remark-highlight-code`,
           },
           {
