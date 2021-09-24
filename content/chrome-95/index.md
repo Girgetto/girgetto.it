@@ -1,6 +1,6 @@
 ---
 title: Novedades chrome 95
-date: "2020-09-22"
+date: "2021-09-22"
 description: La salida de Chrome 95 esta planeada para el 19 de octubre, aquí algunas de las novedades que han sido implementadas
 img: https://images.unsplash.com/photo-1531736275454-adc48d079ce9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80
 type: post
