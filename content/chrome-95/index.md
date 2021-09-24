@@ -2,10 +2,14 @@
 title: Novedades chrome 95
 date: "2021-09-22"
 description: La salida de Chrome 95 esta planeada para el 19 de octubre, aquí algunas de las novedades que han sido implementadas
-img: https://images.unsplash.com/photo-1531736275454-adc48d079ce9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80
+img: https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80
 type: post
 lang: es
 ---
+
+![srosinger3997-unsplash](https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80)
+
+<sub><sup>Photo by [Samantha Gades](https://unsplash.com/@srosinger3997) on Unsplash<sub><sup>
 
 [Main article](https://developer.chrome.com/blog/new-in-devtools-95/)
 
@@ -43,7 +47,7 @@ link.search = `?access=${link.access}`;
 
 ![Ngjx6YRQsH3Fhl6DUZYl](https://wd.imgix.net/image/dPDCek3EhZgLQPGtEG3y0fTn4v82/Ngjx6YRQsH3Fhl6DUZYl.png?auto=format&w=1600)
 
-- Lighthouse 8.4 ha sido añadido
-- Los snipped en el source panel han sido ordenado alfabeticamente
-- Enlace para poder reportar error de tradición en las devTools
-- La UI para el devTools ha sido mejorada
+Lighthouse 8.4 ha sido añadido.
+Los snipped en el source panel han sido ordenado alfabeticamente.
+Enlace para poder reportar error de tradición en las devTools.
+La UI para el devTools ha sido mejorada.
