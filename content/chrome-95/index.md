@@ -11,7 +11,7 @@ lang: es
 
 <sub><sup>Photo by [Samantha Gades](https://unsplash.com/@srosinger3997) on Unsplash<sub><sup>
 
-[Main article](https://developer.chrome.com/blog/new-in-devtools-95/)
+Este post es una traducción revisitada de [What's New In DevTools (Chrome 95)](https://developer.chrome.com/blog/new-in-devtools-95/) de [Jecelyn Yeen](https://developer.chrome.com/authors/jecelynyeen/)
 
 La salida de Chrome 95 esta planeada para el 19 de octubre, aquí algunas de las novedades que han sido implementadas:
 
