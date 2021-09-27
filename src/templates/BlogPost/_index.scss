@@ -1,14 +1,14 @@
 .blog-post {
   padding: 0 $sidePadding;
-  width: 680px;
+  width: $blogWidth;
   margin: 0 auto;
   a {
-    text-decoration:underline;
+    text-decoration: underline;
     font-size: $medium-font-size;
     color: blue;
   }
   img {
-    max-width: 680px;
+    max-width: $blogWidth;
   }
   h1 {
     font-size: 36px;
@@ -53,6 +53,7 @@
 }
 
 .table-of-content {
+  width: $tableOfContentWidth;
   position: fixed;
   right: 50px;
   ul {
