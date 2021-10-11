@@ -5797,12 +5797,12 @@ gatsby-source-filesystem@^3.0.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-source-graphql@^3.0.0:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-graphql/-/gatsby-source-graphql-3.13.0.tgz#ecc77ba21f1512f56affef612f960686e967002c"
-  integrity sha512-ckH0G94GwWXaTJWdXR4dbxm8OsWDyz/Wu4SB7L0CXurxoVePAzmkoduefVPnmq3y/CZbDv6iO3SwKYPybmtANA==
+gatsby-source-graphql@^3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-graphql/-/gatsby-source-graphql-3.14.0.tgz#daa8f6bec0e45b72be17dbf8a3a5dbd092a271f9"
+  integrity sha512-Tsi3CvczlwWaDpDlCTc4GgZC8hlNfEL3/0wGCQ61ygW7/2B77hvnCZxR1HlYjUKRn7S19T4G5hi4ZykPi3PFBw==
   dependencies:
-    "@babel/runtime" "^7.14.8"
+    "@babel/runtime" "^7.15.4"
     "@graphql-tools/links" "^7.1.0"
     "@graphql-tools/utils" "^7.7.3"
     "@graphql-tools/wrap" "^7.0.8"
