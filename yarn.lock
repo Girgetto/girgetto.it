@@ -1061,13 +1061,13 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@deckdeckgo/highlight-code@^3.3.1":
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/@deckdeckgo/highlight-code/-/highlight-code-3.3.1.tgz#431247aa452cc95a1dab7426b5f9fc5fd3ff8c28"
-  integrity sha512-N92vL1Qznu53fz9ovvaW/NYSX5KxfTo4uymnufcVaeWrpt3ajpH2JJn2mIYnrHZn8r4oLeNrJSbulytvwZWclQ==
+"@deckdeckgo/highlight-code@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@deckdeckgo/highlight-code/-/highlight-code-3.4.0.tgz#3e71dc41c0e11dd7f201a1435dd38a9ad8cfb077"
+  integrity sha512-13jWsjoNzFW1t6yGnCUSKdku19EH3ZIYgaCOyR2AVlP9yeNlXTfKarhM/2FkLPgSXsENkMPFpw3tQTO418MEiw==
   dependencies:
     "@deckdeckgo/utils" "2.0.1"
-    prismjs "^1.23.0"
+    prismjs "^1.24.1"
 
 "@deckdeckgo/utils@2.0.1":
   version "2.0.1"
@@ -9667,7 +9667,7 @@ pretty-format@^25.5.0:
     ansi-styles "^4.0.0"
     react-is "^16.12.0"
 
-prismjs@^1.23.0:
+prismjs@^1.24.1:
   version "1.25.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.25.0.tgz#6f822df1bdad965734b310b315a23315cf999756"
   integrity sha512-WCjJHl1KEWbnkQom1+SzftbtXMKQoezOCYs5rECqMN+jP+apI7ftoflyqigqzopSO3hMhTEb0mFClA8lkolgEg==
