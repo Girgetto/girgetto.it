@@ -1,3 +1,15 @@
+.table-of-content {
+  width: $tableOfContentWidth;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  line-height: 28px;
+  float: right;
+  margin-right: 2%;
+  ul {
+    list-style: auto;
+  }
+}
 .blog-post {
   padding: 0 $sidePadding;
   width: $blogWidth;
@@ -52,12 +64,9 @@
   }
 }
 
-.table-of-content {
-  width: $tableOfContentWidth;
-  position: fixed;
-  right: 50px;
-  ul {
-    list-style: none;
+@media (max-width: $breakpoint-tablet-max + 168px) {
+  .table-of-content {
+    display: none;
   }
 }
 
