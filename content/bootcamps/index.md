@@ -22,7 +22,7 @@ Para empezar diria el tiempo, poder entrar en un sector con mas o menos 9/15 sem
 Un bootcamp se focaliza mas en la practica que en la teoria, haciendolo mas entretenido.
 Tener profesores o asistentes profesores que te ayudan en tu a aprendizaje, respondiendo a preguntas y corrigiendo tu estilo de codigo.
 
-**¿Qual pueden ser los contras?**
+**¿Cual pueden ser los contras?**
 
 Los títulos de un bootcamp no es como el titulo universitario, no tiene un reconocimiento oficial, tu preparación para la diferencia
 El hecho de que el tiempo sea reducido no te da la oportunidad de poder profundizar mucho un tema.
