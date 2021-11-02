@@ -16,7 +16,7 @@ Podcast sobre los bootcamps, contestando ad algunas preguntas:
 Según wikipedia la definición de bootcamp de programación que es cursos intensivos de desarrollo del software, que empezaron en el año 2011.
 Han sido creados para rellenar un vacío de talentos, las industrias techs necesitaban mano de obra y las universidades con un plano de estudios de 4 años no conseguían satisfacer esta demanda, porque este mundo esta cambiando muy rápidamente y hacen falta sistema de estudio que cambian de forma rapida.
 
-**¿Qual son los beneficios de un bootcamp?**
+**¿Cual son los beneficios de un bootcamp?**
 
 Para empezar diria el tiempo, poder entrar en un sector con mas o menos 9/15 semanas, si el formado es un full-time, puedo entrar en ese sector es mucho mejor que estudiar 4 años de universidad.
 Un bootcamp se focaliza mas en la practica que en la teoria, haciendolo mas entretenido.
