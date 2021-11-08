@@ -1061,18 +1061,18 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@deckdeckgo/highlight-code@^3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@deckdeckgo/highlight-code/-/highlight-code-3.4.0.tgz#3e71dc41c0e11dd7f201a1435dd38a9ad8cfb077"
-  integrity sha512-13jWsjoNzFW1t6yGnCUSKdku19EH3ZIYgaCOyR2AVlP9yeNlXTfKarhM/2FkLPgSXsENkMPFpw3tQTO418MEiw==
+"@deckdeckgo/highlight-code@^3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@deckdeckgo/highlight-code/-/highlight-code-3.4.2.tgz#e8925d701b8121fe336bf2cd2eaf33080ff188dd"
+  integrity sha512-sUvzhowzOXSSyxchTwmXgnHGt1KpnWyUX1JjnhPVVQQ3IVOSXfsM/GDtuACMw/ouggLit0p2PYpuOUgeKZ8EEQ==
   dependencies:
-    "@deckdeckgo/utils" "2.0.1"
+    "@deckdeckgo/utils" "^2.3.0"
     prismjs "^1.24.1"
 
-"@deckdeckgo/utils@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@deckdeckgo/utils/-/utils-2.0.1.tgz#79d02450f71a0ca0300883cf9d65cd548a565e22"
-  integrity sha512-wS6KqJZYOB5V6lIYauv4ij5Q2S0e9BAHw+786FsFZ0UZ22GOxBHvG3Cq7kIxRs8Zr3wAw2eTvcSOZ0TIj/tfSQ==
+"@deckdeckgo/utils@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@deckdeckgo/utils/-/utils-2.3.0.tgz#2d817f254026a2453c1318ed567988539b985265"
+  integrity sha512-ahvUG7JzXXYni/tWskhJtm/o+2LX+3gtigd21XqGoP69D6lgVHnPy/qMTyINuhRmStEWn7HGBFqBMu5l9yC1Kg==
 
 "@endemolshinegroup/cosmiconfig-typescript-loader@3.0.2":
   version "3.0.2"

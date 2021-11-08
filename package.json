@@ -14,7 +14,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@deckdeckgo/highlight-code": "^3.4.0",
+    "@deckdeckgo/highlight-code": "^3.4.2",
+    "gatsby": "^3.14.4",
     "gatsby": "^3.14.5",
     "gatsby-plugin-image": "^1.14.1",
     "gatsby-plugin-gatsby-cloud": "^3.1.0",
