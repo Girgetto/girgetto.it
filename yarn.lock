@@ -1061,10 +1061,10 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@deckdeckgo/highlight-code@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@deckdeckgo/highlight-code/-/highlight-code-3.5.0.tgz#2619189a6b01f6d257e4d34d427d171e8587fa3e"
-  integrity sha512-/731/8DBeX8IEbjtoSh2/2+ABU4Qrh4tL7nnwouVDKkg8QGb0fhTHm/MMElyx9uNQUkR3OyESsWxREWNNJfB7A==
+"@deckdeckgo/highlight-code@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@deckdeckgo/highlight-code/-/highlight-code-3.6.0.tgz#7fa990fbba850ccb107b03171a9e961e556ffa1e"
+  integrity sha512-3MUXcnuQwiE3n5v6dsiBWFlfg5st//c8/tvkzuMj+2kejzn5bpW80JlF8zK9tZUNxXNwN0mdtC3L5e+FNsOHZw==
   dependencies:
     "@deckdeckgo/utils" "^2.4.0"
     prismjs "^1.25.0"
