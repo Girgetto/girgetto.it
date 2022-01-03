@@ -1061,10 +1061,10 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@deckdeckgo/highlight-code@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@deckdeckgo/highlight-code/-/highlight-code-3.5.0.tgz#2619189a6b01f6d257e4d34d427d171e8587fa3e"
-  integrity sha512-/731/8DBeX8IEbjtoSh2/2+ABU4Qrh4tL7nnwouVDKkg8QGb0fhTHm/MMElyx9uNQUkR3OyESsWxREWNNJfB7A==
+"@deckdeckgo/highlight-code@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@deckdeckgo/highlight-code/-/highlight-code-3.6.0.tgz#7fa990fbba850ccb107b03171a9e961e556ffa1e"
+  integrity sha512-3MUXcnuQwiE3n5v6dsiBWFlfg5st//c8/tvkzuMj+2kejzn5bpW80JlF8zK9tZUNxXNwN0mdtC3L5e+FNsOHZw==
   dependencies:
     "@deckdeckgo/utils" "^2.4.0"
     prismjs "^1.25.0"
@@ -5759,10 +5759,10 @@ gatsby-remark-copy-linked-files@^5.4.0:
     probe-image-size "^6.0.0"
     unist-util-visit "^2.0.3"
 
-gatsby-remark-highlight-code@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-highlight-code/-/gatsby-remark-highlight-code-3.0.1.tgz#5ffcebf8e91a57743126c8f658967196483e9741"
-  integrity sha512-ehcaabfiYZn6iPdN3cb+EJKfhIxU13w7AA3AzAj4zVbUx5NVRa8dmJgzC1wIXur84vInTGn7LLovvq91Hbmx0A==
+gatsby-remark-highlight-code@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-highlight-code/-/gatsby-remark-highlight-code-3.0.2.tgz#1a1e15b2527ef58ae699be3108f2704b42f403b0"
+  integrity sha512-j0KWKJn8J96YMFcC1Nx/VrRS+7db57gD2MGEmf6lD7yl/pitXClnlCgH3n9t7XPNWcOvV0SnaSkqWSqmCroxNw==
   dependencies:
     gatsby-node-helpers "^1.2.1"
     lodash "^4.17.21"
@@ -7245,10 +7245,10 @@ is-string@^1.0.5, is-string@^1.0.7:
   dependencies:
     has-tostringtag "^1.0.0"
 
-is-svg@>=4.2.2:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/is-svg/-/is-svg-4.3.1.tgz#8c63ec8c67c8c7f0a8de0a71c8c7d58eccf4406b"
-  integrity sha512-h2CGs+yPUyvkgTJQS9cJzo9lYK06WgRiXUqBBHtglSzVKAuH4/oWsqk7LGfbSa1hGk9QcZ0SyQtVggvBA8LZXA==
+is-svg@>=4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/is-svg/-/is-svg-4.3.2.tgz#a119e9932e1af53f6be1969d1790d6cc5fd947d3"
+  integrity sha512-mM90duy00JGMyjqIVHu9gNTjywdZV+8qNasX8cm/EEYZ53PHDgajvbBwNVvty5dwSAxLUD3p3bdo+7sR/UMrpw==
   dependencies:
     fast-xml-parser "^3.19.0"
 
