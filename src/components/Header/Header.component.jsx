@@ -45,9 +45,9 @@ const Header = () => {
       </Link>
       <article className="article">
         <Link to={post.node.fields.slug}>
-          <h1>{post.node.frontmatter.title}</h1>
+          <h1 className="main-title">{post.node.frontmatter.title}</h1>
         </Link>
-        <p>{post.node.frontmatter.description}</p>
+        <p className="main-description">{post.node.frontmatter.description}</p>
       </article>
     </header>
   );
