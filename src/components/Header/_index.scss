@@ -26,6 +26,14 @@
   }
   .article {
     width: 400px;
+    .main-title {
+      font-size: 3rem;
+    }
+
+    .main-description {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+    }
   }
 }
 
@@ -49,6 +57,7 @@
       height: 400px;
       width: 100%;
       padding-left: 0px;
+      text-align: center;
     }
   }
 }

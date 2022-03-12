@@ -14,7 +14,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@deckdeckgo/highlight-code": "^3.5.0",
+    "@deckdeckgo/highlight-code": "^3.6.0",
     "gatsby": "^3.14.4",
     "gatsby": "^3.14.6",
     "gatsby-plugin-image": "^1.14.1",
@@ -27,8 +27,8 @@
     "gatsby-plugin-sharp": "^3.14.3",
     "gatsby-plugin-sitemap": "^4.10.0",
     "gatsby-remark-autolink-headers": "^4.11.0",
-    "gatsby-remark-copy-linked-files": "^5.2.0",
     "gatsby-remark-highlight-code": "^3.0.2",
+    "gatsby-remark-copy-linked-files": "^5.9.0",
     "gatsby-remark-images": "^5.11.0",
     "gatsby-source-filesystem": "^3.14.0",
     "gatsby-source-graphql": "^3.14.0",
@@ -38,10 +38,10 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.43.4"
+    "sass": "^1.49.9"
   },
   "devDependencies": {
-    "is-svg": ">=4.2.2"
+    "is-svg": ">=4.3.2"
   },
   "resolutions": {
     "ansi-html": "https://registry.yarnpkg.com/ansi-html-community/-/ansi-html-community-0.0.8.tgz#69fbc4d6ccbe383f9736934ae34c3f8290f1bf41"
