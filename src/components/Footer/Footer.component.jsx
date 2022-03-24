@@ -12,6 +12,9 @@ const Footer = () => (
       <a href="https://dev.to/girgetto" className="link">
         dev.to
       </a>
+      <a href="https://instagram.com/girgetto.it" className="link">
+        Instagram
+      </a>
     </div>
     <p>Powered by Gatsby & Github</p>
   </footer>
