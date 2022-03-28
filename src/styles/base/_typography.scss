@@ -3,6 +3,11 @@
   src: url("../fonts/Inter-Regular.ttf");
 }
 
+@font-face {
+  font-family: $font-family-light;
+  src: url("../fonts/Inter-Light.ttf");
+}
+
 body {
   font-family: $font-family;
 }
@@ -19,7 +24,7 @@ a:visited {
 }
 
 p {
-  font-weight: 400;
+  font-family: $font-family-light;
   font-size: $small-font-size;
   color: $smallText;
   line-height: 18px;
