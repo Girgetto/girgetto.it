@@ -14,7 +14,11 @@
         background-color: $gray200;
       }
       &.is-selected {
-        background-color: $primary;
+        background: linear-gradient(
+          90deg,
+          $primary 0%,
+          $secondary 100%
+        );
         color: $textSelected;
       }
     }
