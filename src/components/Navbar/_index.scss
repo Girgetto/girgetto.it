@@ -2,26 +2,36 @@
   @include grid;
   padding: 62px $sidePadding;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   #links {
     text-align: center;
     flex-grow: 0.8;
+    margin: 48px 0;
+
     .link {
       padding: 6px 12px;
       border-radius: 1000px;
       margin: 24px;
+
       &:hover {
         background-color: $gray200;
       }
+
       &.is-selected {
-        background: linear-gradient(
-          90deg,
-          $primary 0%,
-          $secondary 100%
-        );
+        background: linear-gradient(90deg,
+            $primary 0%,
+            $secondary 100%);
         color: $textSelected;
       }
     }
+  }
+
+  .social {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -30,9 +40,11 @@
     padding: 0;
     align-items: flex-start;
     flex-direction: column;
+
     a {
       padding: $mobile-padding;
     }
+
     #links {
       position: fixed;
       bottom: 0;
@@ -40,6 +52,17 @@
       padding: 40px 0;
       margin: 0 auto;
       width: 100%;
+    }
+
+    .social {
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 400px;
+
+      &>a {
+        padding: 20px;
+      }
     }
   }
 }

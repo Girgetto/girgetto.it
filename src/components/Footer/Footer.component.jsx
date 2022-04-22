@@ -1,23 +1,5 @@
 import React from "react";
-
-const Links = [
-  {
-    name: "Github",
-    link: "https://github.com/girgetto",
-  },
-  {
-    name: "Twitter",
-    link: "https://twitter.com/girgettoIT",
-  },
-  {
-    name: "dev.to",
-    link: "https://dev.to/girgetto",
-  },
-  {
-    name: "Instagram",
-    link: "https://instagram.com/girgetto.it",
-  },
-];
+import Links from "../../common/links";
 
 const LinkComponent = ({ link, name }) => (
   <a href={link} className="link">
@@ -28,7 +10,7 @@ const LinkComponent = ({ link, name }) => (
 const Footer = () => (
   <footer className="footer">
     <div className="social-links">
-      {Links.map((link, index) => (
+      {Object.values(Links).map((link, index) => (
         <LinkComponent key={index} {...link} />
       ))}
     </div>

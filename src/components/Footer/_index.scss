@@ -15,5 +15,8 @@
     width: $mobile-article-width;
     height: 120px;
     z-index: 9999;
+    .social-links {
+      display: none;
+    }
   }
 }

@@ -1766,6 +1766,11 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
+"@tabler/icons@^1.66.0":
+  version "1.66.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.66.0.tgz#411630b5c8997e42d7f4fe920054bb7750975b50"
+  integrity sha512-lSm1uDymlWdBbGN3TuqvzQbV3kIwcTJo0QTJJbSb5py+ivxSI/Fat/t+pA7/JqLm9rUU+CXuVj3PONSUTanxpg==
+
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.3.0.tgz#fe98a93fe789247e998c75e74e9c7c63217aa276"

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import Links from "../../common/links";
 
 const links = [
   { link: "/", name: "Latest" },
@@ -25,6 +26,15 @@ const Navbar = ({ location }) => (
         </Link>
       ))}
     </nav>
+    <div className="social">
+      {Object.values(Links).map((link, i) =>
+        link.icon ? (
+          <a key={i} href={link.link} rel="noreferrer" target="_blank">
+            {link.icon}
+          </a>
+        ) : null
+      )}
+    </div>
   </header>
 );
 
