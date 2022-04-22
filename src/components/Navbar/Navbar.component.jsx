@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Links from "../../common/links";
+import SocialLinks from "../../common/SocialLinks";
 
 const links = [
   { link: "/", name: "Latest" },
@@ -10,9 +10,24 @@ const links = [
 
 const Navbar = ({ location }) => (
   <header className="flex" id="header" role="banner">
-    <a href="https://girgetto.it">
-      <h1>girgetto.it</h1>
-    </a>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        maxWidth: "296px",
+        width: "100%",
+      }}
+    >
+      <img
+        src="https://pbs.twimg.com/profile_images/1508421859091562504/6-rItSOz_400x400.jpg"
+        alt="girgetto_foto"
+        style={{ borderRadius: "50%", width: "100px", height: "100px" }}
+      />
+      <Link href="/">
+        <h1>girgetto.it</h1>
+      </Link>
+    </div>
     <nav id="links" className="flex">
       {links.map(({ link, name }) => (
         <Link
@@ -27,11 +42,12 @@ const Navbar = ({ location }) => (
       ))}
     </nav>
     <div className="social">
-      {Object.values(Links).map((link, i) =>
+      {Object.values(SocialLinks).map((link, i) =>
         link.icon ? (
-          <a key={i} href={link.link} rel="noreferrer" target="_blank">
+          <Link key={i} href={link.link} rel="noreferrer" target="_blank">
             {link.icon}
-          </a>
+            {link.name}
+          </Link>
         ) : null
       )}
     </div>

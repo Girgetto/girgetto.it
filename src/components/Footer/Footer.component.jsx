@@ -1,5 +1,5 @@
 import React from "react";
-import Links from "../../common/links";
+import SocialLinks from "../../common/SocialLinks";
 
 const LinkComponent = ({ link, name }) => (
   <a href={link} className="link">
@@ -10,7 +10,7 @@ const LinkComponent = ({ link, name }) => (
 const Footer = () => (
   <footer className="footer">
     <div className="social-links">
-      {Object.values(Links).map((link, index) => (
+      {Object.values(SocialLinks).map((link, index) => (
         <LinkComponent key={index} {...link} />
       ))}
     </div>

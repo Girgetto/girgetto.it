@@ -35,6 +35,14 @@
 
     & > a {
       width: 58px;
+      text-align: center;
+      padding: 8px;
+
+
+      &:hover {
+        background-color: $gray200;
+        border-radius: 5%;
+      }
     }
   }
 }
@@ -44,6 +52,7 @@
     padding: 0;
     align-items: flex-start;
     flex-direction: column;
+    padding: 4%;
 
     a {
       padding: $mobile-padding;
