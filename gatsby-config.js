@@ -6,7 +6,13 @@ module.exports = {
   siteMetadata: {
     title: "girgetto.it",
     author: { name: `Giorgio Grassini` },
-    description: `girgetto.it personal blog`,
+    description: `
+      Plataforma para encontrar materiales 
+      sobre el desarrollo web, lenguajes de programación, 
+      frameworks y librerías como: JavaScript, react, nodejs,
+      express, css, HTML. Creado por Giorgio Grassini, web 
+      developer en DCSL Guidesmiths y Lead teacher 
+      en ThirdBridge bootcamp.`,
     siteUrl: `https://girgetto.it`,
     social: {
       twitter: `GirgettoIT`,
