@@ -11,13 +11,14 @@
       object-fit: fill;
       width: 100%;
       height: auto;
-      min-height: 220px;
+      min-height: 213px;
       min-width: 320px;
 
       border: 1px solid rgba(0, 0, 0, 0.08);
       box-sizing: border-box;
       box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
       border-radius: 26px;
+      aspect-ratio: 1.50;
     }
   }
   .header-img {
