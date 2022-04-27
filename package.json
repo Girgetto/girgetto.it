@@ -18,7 +18,7 @@
     "@tabler/icons": "^1.66.0",
     "ansi-html": "https://registry.yarnpkg.com/ansi-html-community/-/ansi-html-community-0.0.8.tgz#69fbc4d6ccbe383f9736934ae34c3f8290f1bf41",
     "ansi-html-community": "0.0.8",
-    "gatsby": "^3.14.6",
+    "gatsby": "^4.12.1",
     "gatsby-plugin-gatsby-cloud": "^3.1.0",
     "gatsby-plugin-image": "^1.14.1",
     "gatsby-plugin-manifest": "^3.14.0",
