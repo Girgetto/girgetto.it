@@ -24,7 +24,7 @@ const Navbar = ({ location }) => (
         alt="girgetto_foto"
         style={{ borderRadius: "50%", width: "100px", height: "100px" }}
       />
-      <Link href="/">
+      <Link to="/">
         <h1>girgetto.it</h1>
       </Link>
     </div>
@@ -44,10 +44,10 @@ const Navbar = ({ location }) => (
     <div className="social">
       {Object.values(SocialLinks).map((link, i) =>
         link.icon ? (
-          <Link key={i} href={link.link} rel="noreferrer" target="_blank">
+          <a key={i} href={link.link} rel="noreferrer" target="_blank">
             {link.icon}
             {link.name}
-          </Link>
+          </a>
         ) : null
       )}
     </div>

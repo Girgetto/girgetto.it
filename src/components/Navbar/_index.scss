@@ -75,6 +75,10 @@
 
       & > a {
         padding: 8px;
+        max-width: 48px;
+        & > svg {
+          max-width: 48px;
+        }
       }
     }
   }
