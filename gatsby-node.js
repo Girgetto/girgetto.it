@@ -1,5 +1,10 @@
 const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const { createFilePath } = require(`gatsby-source-filesystem`);
+const fetch = require("node-fetch");
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -112,4 +117,31 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
     }
   `)
+}
+
+exports.sourceNodes = async (
+  { actions: { createNode }, createNodeId, createContentDigest },
+  pluginOptions
+) => {
+  const response = await fetch(`https://api.twitch.tv/helix/videos?user_id=${process.env.TWICH_GIRGETTO_USER_ID}`, {
+    method: 'GET',
+    headers: {
+      'Authorization': `Bearer ${process.env.TWITCH_TOKEN}`,
+      'Client-Id': process.env.TWITCH_CLIENT_ID,
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+  });
+  const data = await response.json();
+
+  createNode({
+    ...data,
+    id: createNodeId(`Twitch`),
+    parent: null,
+    children: [],
+    internal: {
+      type: `Twitch`,
+      content: JSON.stringify(data),
+      contentDigest: createContentDigest(data),
+    },
+  });
 }
