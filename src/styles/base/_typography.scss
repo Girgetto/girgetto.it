@@ -1,11 +1,13 @@
 @font-face {
   font-family: $font-family;
   src: url("../fonts/Inter-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: $font-family-light;
   src: url("../fonts/Inter-Light.ttf");
+  font-display: swap;
 }
 
 body {
