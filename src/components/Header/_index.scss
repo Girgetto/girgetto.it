@@ -5,36 +5,8 @@
   max-width: 1280px;
   margin-bottom: 36px;
 
-  .header-img-link {
-    width: 40%;
-
-    .main-post-img {
-      object-fit: fill;
-      width: 100%;
-      height: auto;
-      min-height: 213px;
-      min-width: 320px;
-
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      box-sizing: border-box;
-      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
-      border-radius: 26px;
-      aspect-ratio: 1.50;
-    }
-  }
-
-  .header-img {
-    width: 464px;
-    height: 281px;
-  }
-
   .article {
     width: 400px;
-    padding-left: 48px;
-
-    .main-title {
-      font-size: 3rem;
-    }
 
     .main-description {
       font-size: 1.2rem;

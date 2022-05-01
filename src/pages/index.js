@@ -7,7 +7,7 @@ import Layout from "../layout";
 const IndexPage = ({ location }) => (
   <Layout location={location}>
     <Components.SEO title="Home" />
-    <div style={{ display: "flex" }}>
+    <div style={{ display: "flex", justifyContent: 'space-evenly' }}>
       <Components.Header />
       <Components.Videos />
     </div>
