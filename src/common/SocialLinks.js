@@ -10,7 +10,7 @@ import React from "react";
 const style = (bg) => ({
   backgroundColor: bg,
   borderRadius: "50%",
-  padding: "20%",
+  padding: "10%",
 });
 
 const stroke = 1.2;
