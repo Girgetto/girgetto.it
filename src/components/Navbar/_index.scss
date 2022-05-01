@@ -53,6 +53,7 @@
     align-items: flex-start;
     flex-direction: column;
     padding: 4%;
+    z-index: 9999999;
 
     a {
       padding: $mobile-padding;
