@@ -2246,10 +2246,10 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@tabler/icons@^1.67.0":
-  version "1.67.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.67.0.tgz#04894c9512c73aa2dfe290238d425cbc1467296b"
-  integrity sha512-t+XiVYMU+dSZcGqI0d9mCZJEbVAzrrUIiUtre78Rcp16au677WAC0YwS7+DNnbDuEj4XEnClaF9eXt+VMjka+w==
+"@tabler/icons@^1.68.0":
+  version "1.68.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.68.0.tgz#047bd88966cc24ef957b3c429a13bb82cca95561"
+  integrity sha512-UseBEEhv7r+Drl3iZih7rkwqkfJJZscjd5ZvK1WdIIulQsBa+qE8WBDGdAO0RtjkCclEK88z9kC0s5wiVPIvkw==
 
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
