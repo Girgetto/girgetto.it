@@ -1,12 +1,13 @@
 .header {
   @include grid;
-  padding: 0 $sidePadding;
+  padding-left: $sidePadding;
   flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 1280px;
   margin-bottom: 36px;
+
   .header-img-link {
-    width: 50%;
+    width: 40%;
+
     .main-post-img {
       object-fit: fill;
       width: 100%;
@@ -21,12 +22,16 @@
       aspect-ratio: 1.50;
     }
   }
+
   .header-img {
     width: 464px;
     height: 281px;
   }
+
   .article {
     width: 400px;
+    padding-left: 48px;
+
     .main-title {
       font-size: 3rem;
     }
@@ -43,16 +48,20 @@
     padding: $mobile-padding;
     flex-direction: column;
     align-items: center;
+
     .header-img-link {
       width: 100%;
+
       .header-img {
         width: $mobile-img-width;
+
         img {
           object-fit: fill;
           max-width: $mobile-img-width;
         }
       }
     }
+
     .article {
       margin-top: 32px;
       height: 400px;

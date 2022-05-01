@@ -15,7 +15,7 @@ const Navbar = ({ location }) => (
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        maxWidth: "296px",
+        maxWidth: "256px",
         width: "100%",
       }}
     >

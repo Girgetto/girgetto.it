@@ -62,5 +62,13 @@ module.exports = {
     },
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.girgetto.it',
+        sitemap: 'https://girgetto.it/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    }
   ],
 };

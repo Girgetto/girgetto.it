@@ -131,17 +131,19 @@ exports.sourceNodes = async (
       'Content-Type': 'application/x-www-form-urlencoded'
     },
   });
-  const data = await response.json();
+  const { data } = await response.json();
 
-  createNode({
-    ...data,
-    id: createNodeId(`Twitch`),
-    parent: null,
-    children: [],
-    internal: {
-      type: `Twitch`,
-      content: JSON.stringify(data),
-      contentDigest: createContentDigest(data),
-    },
-  });
+  data.forEach(node => {
+    createNode({
+      data: node,
+      id: createNodeId(node.id),
+      parent: null,
+      children: [],
+      internal: {
+        type: `Twitch`,
+        content: JSON.stringify(node),
+        contentDigest: createContentDigest(node),
+      },
+    });
+  })
 }
