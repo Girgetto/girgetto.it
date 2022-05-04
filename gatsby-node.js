@@ -133,7 +133,7 @@ exports.sourceNodes = async (
   });
   const { data } = await response.json();
 
-  data.forEach(node => {
+  for (node in data){
     createNode({
       data: node,
       id: createNodeId(node.id),
@@ -145,5 +145,5 @@ exports.sourceNodes = async (
         contentDigest: createContentDigest(node),
       },
     });
-  })
+  }
 }

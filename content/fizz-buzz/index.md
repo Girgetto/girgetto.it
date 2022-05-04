@@ -1,3 +1,11 @@
+---
+title: Como resolver el Fizz Buzz con JavaScript con un bucle for
+date: "2022-05-04"
+description: Este problema consiste en recorrer un array de números, si el número es un múltiplo de 3 tenemos que remplazarlo con la palabra `FIZZ`, si un múltiplo de 5 con la palabra `BUZZ` y si es un múltiplo de 3 y 5 con `FIZZ BUZZ`.
+type: post
+lang: es
+---
+
 # Como resolver el Fizz Buzz con JavaScript con un bucle for
 
 Este problema consiste en recorrer un array de números, si el número es un múltiplo de 3 tenemos que remplazarlo con la palabra `FIZZ`, si un múltiplo de 5 con la palabra `BUZZ` y si es un múltiplo de 3 y 5 con `FIZZ BUZZ`.
