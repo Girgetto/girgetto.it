@@ -81,7 +81,7 @@ for (i = 1; i < 16; i++) {
 }
 ```
 
-# tercera condición
+# Tercera condición
 
 Para el FIZZ BUZZ tenemos que utilizar el operador `&&` para comprobar que las dos condiciones sean verdaderas y tiene que ser la primara condición! ⚠️
 
