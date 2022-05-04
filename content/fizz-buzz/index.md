@@ -44,9 +44,7 @@ Si nos fijamos en los números en consola podemos ver que ahora en todos los nú
 
 OUTPUT
 
-```sh
 1, 2, FIZZ, 3,  4, BUZZ, FIZZ, 6, ...
-```
 
 ⚠️ pero tenemos un problema, también estamos imprimiendo los números divisibles por 3, para evitar eso podemos incrementar el contador en el momento que entra en la condición con `i++`:
 
