@@ -27,18 +27,10 @@ const Videos = () => {
   return (
     <div className="videos">
       <h1>Últimos videos</h1>
-      {/* <img
-        src={node.data.thumbnail_url
-          .replace("%{width}", "200")
-          .replace("%{height}", "100")}
-        alt="twitch"
-        style={{ cursor: "pointer", borderRadius: "5%"}}
-        onClick={() => {
-          window.open(node.data.url, "_blank");
-        }}
-      /> */}
       <a href={node.data.url} rel="noreferrer" target="_blank">
-        <p><b>Twitch</b> 👉 {node.data.title}</p>
+        <p>
+          <b>Twitch</b> 👉 {node.data.title}
+        </p>
       </a>
     </div>
   );
