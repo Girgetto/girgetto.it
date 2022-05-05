@@ -6113,7 +6113,7 @@ fs-exists-cached@1.0.0, fs-exists-cached@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs-exists-cached/-/fs-exists-cached-1.0.0.tgz#cf25554ca050dc49ae6656b41de42258989dcbce"
   integrity sha1-zyVVTKBQ3EmuZla0HeQiWJidy84=
 
-fs-extra@^10.0.0:
+fs-extra@^10.0.0, fs-extra@^10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
   integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
@@ -6259,17 +6259,17 @@ gatsby-core-utils@^3.12.1, gatsby-core-utils@^3.13.0, gatsby-core-utils@^3.8.2:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^3.14.0-next.1:
-  version "3.14.0-next.1"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.14.0-next.1.tgz#56fc524702f5dfc773dac813937ae661c599e967"
-  integrity sha512-2hP1UGkcpJ1I9EdIcdd0cy7FutKe+vdqB+h8/GSaFwCeEzdNRAZLwba45b+GddqtMBAEJv5yopXxgFoeZtZAAg==
+gatsby-core-utils@^3.14.0-next.3:
+  version "3.14.0-next.3"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.14.0-next.3.tgz#440090e8795168442b60af1e0e1c40983d617f5e"
+  integrity sha512-Ji1Vv/nhPM9vBPM1QHxbsbWptFcE49zcAw7CsYJKjl3kBqbR0wJYMNy9zIpLjFTZEO45IK1F7DHP/sM6GBQykA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
     configstore "^5.0.1"
     fastq "^1.13.0"
     file-type "^16.5.3"
-    fs-extra "^10.0.0"
+    fs-extra "^10.1.0"
     got "^11.8.3"
     import-from "^4.0.0"
     lmdb "^2.2.6"
@@ -6350,16 +6350,16 @@ gatsby-parcel-config@^0.3.1:
     "@parcel/transformer-raw" "^2.3.2"
     "@parcel/transformer-react-refresh-wrap" "^2.3.2"
 
-gatsby-plugin-gatsby-cloud@^4.14.0-next.1:
-  version "4.14.0-next.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-4.14.0-next.1.tgz#0e09fbea922e58548211b22cb899fa18791174ca"
-  integrity sha512-8123kgX8WCAHDB2Wujln1BmrViYBDsz32FXZwj4yHujUMjHxemTQFKGFdOmeyeAhD9fu7T8QjvAgRnYEuSJvOA==
+gatsby-plugin-gatsby-cloud@^4.14.0-next.4:
+  version "4.14.0-next.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-4.14.0-next.4.tgz#95e5dad4295e5808d5e99886f9a4c99c3042c076"
+  integrity sha512-X2pqtGT1rPe5FaFBZwj9RNVh+h7e/6LQDxFtOrUffMKs8upFKWF0v4ptto67tetn2Rt/MdXj03bZnMxvyKiPIg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     date-fns "^2.28.0"
-    fs-extra "^10.0.0"
-    gatsby-core-utils "^3.14.0-next.1"
-    gatsby-telemetry "^3.14.0-next.1"
+    fs-extra "^10.1.0"
+    gatsby-core-utils "^3.14.0-next.3"
+    gatsby-telemetry "^3.14.0-next.3"
     js-cookie "^3.0.1"
     kebab-hash "^0.1.2"
     lodash "^4.17.21"
@@ -6671,10 +6671,10 @@ gatsby-telemetry@^3.12.1:
     lodash "^4.17.21"
     node-fetch "^2.6.7"
 
-gatsby-telemetry@^3.14.0-next.1:
-  version "3.14.0-next.1"
-  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.14.0-next.1.tgz#c610e7dac6f3103adf083ca9f21af46527cec568"
-  integrity sha512-9lCkeCdr9qVOEoML9OrheftA6tswoixbhzUFirOt6KAD6DlrEKTGfQebN1vz5BLBwQIUx5p8gMIAhJCycTnfnA==
+gatsby-telemetry@^3.14.0-next.3:
+  version "3.14.0-next.3"
+  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.14.0-next.3.tgz#854525cbca3f210dd0019f88a64f67e3bd088bf2"
+  integrity sha512-ct9qQ7GGdNggFTLGH5HdyvMb95/4xI29UGu5a8A5g4lwnHmwvsKY6k/TiUPy2gRL5ujzz8jtQAATllnafjPCjw==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/runtime" "^7.15.4"
@@ -6683,8 +6683,8 @@ gatsby-telemetry@^3.14.0-next.1:
     async-retry-ng "^2.0.1"
     boxen "^4.2.0"
     configstore "^5.0.1"
-    fs-extra "^10.0.0"
-    gatsby-core-utils "^3.14.0-next.1"
+    fs-extra "^10.1.0"
+    gatsby-core-utils "^3.14.0-next.3"
     git-up "^4.0.5"
     is-docker "^2.2.1"
     lodash "^4.17.21"
