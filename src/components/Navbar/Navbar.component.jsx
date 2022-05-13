@@ -19,13 +19,13 @@ const Navbar = ({ location }) => (
         width: "100%",
       }}
     >
-      <Link to="/" style={{ display: 'flex', alignItems: 'center'}}>
+      <Link to="/" style={{ display: "flex", alignItems: "center" }}>
         <img
           src="https://pbs.twimg.com/profile_images/1508421859091562504/6-rItSOz_400x400.jpg"
           alt="girgetto_foto"
           style={{ borderRadius: "50%", width: "100px", height: "100px" }}
         />
-        <h1>girgetto.it</h1>
+        <h1 style={{ marginLeft: "12px" }}>girgetto.it</h1>
       </Link>
     </div>
     <nav id="links" className="flex">
