@@ -1,11 +1,7 @@
 .post-container {
   padding: 0 $sidePadding;
-  justify-content: space-between;
   @include grid;
   flex-wrap: wrap;
-  // .card {
-  //   margin: 16px;
-  // }
 }
 
 @media (max-width: $breakpoint-mobile) {

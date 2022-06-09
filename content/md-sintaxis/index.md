@@ -1,6 +1,6 @@
 ---
 title: Sintaxis útiles para escribir en un Markdown 📝
-date: "2020-06-22"
+date: "2022-06-09"
 description: Consejos para escribir README en markdown
 img:
 type: post
@@ -9,11 +9,13 @@ lang: es
 
 Para los encabezados utiliza las almohadilla (#), la cantidad determina el tamaño.
 
+```
 # Primer Encabezado
 
 ## Segundo Encabezado
 
 ### Tercer Encabezado
+```
 
 Utiliza los backticks (`) para escribir comandos o códigos.
 
