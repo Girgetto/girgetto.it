@@ -19,7 +19,7 @@
     "ansi-html-community": "^0.0.8",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "gatsby": "^4.12.1",
+    "gatsby": "^4.19.1",
     "gatsby-plugin-gatsby-cloud": "^4.14.0-next.1",
     "gatsby-plugin-image": "^1.14.1",
     "gatsby-plugin-manifest": "^3.14.0",
