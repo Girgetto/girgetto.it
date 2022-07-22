@@ -2,6 +2,7 @@
   padding: 0 $sidePadding;
   @include grid;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media (max-width: $breakpoint-mobile) {
