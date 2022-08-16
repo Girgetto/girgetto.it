@@ -3015,6 +3015,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/sharp@^0.30.5":
+  version "0.30.5"
+  resolved "https://registry.yarnpkg.com/@types/sharp/-/sharp-0.30.5.tgz#d75d91f7acf5260525aeae229845046dcff6d17a"
+  integrity sha512-EhO29617AIBqxoVtpd1qdBanWpspk/kD2B6qTFRJ31Q23Rdf+DNU1xlHSwtqvwq1vgOqBwq1i38SX+HGCymIQg==
+  dependencies:
+    "@types/node" "*"
+
 "@types/tmp@^0.0.33":
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.33.tgz#1073c4bc824754ae3d10cfab88ab0237ba964e4d"
@@ -6444,10 +6451,10 @@ gatsby-core-utils@^2.14.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^3.20.0:
-  version "3.20.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.20.0.tgz#5f9f1b1777fdf61479f79eb9cf18a72af424c856"
-  integrity sha512-D3DIulUFoPvexwsGYFkfESL1Dd3qsxBfj8OBi8vsd6BuXrA6MbLtX3j5+BLVxfKkN2wF7XN6b3/DH+JGNuhh2A==
+gatsby-core-utils@^3.20.0, gatsby-core-utils@^3.21.0:
+  version "3.21.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.21.0.tgz#5ca118857cf9f59b69f06f2ae886d8182af46515"
+  integrity sha512-pCDa9EGU8niRJQVv7ow3ijzmG0PegZaBc5Yt6z4enc4m7Dl5ZT6Edkcw9p8q/FhGiZUkzQhWaRDxUvtaoPwAOQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
@@ -6566,16 +6573,16 @@ gatsby-plugin-image@^1.14.1:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.7.2"
 
-gatsby-plugin-manifest@^3.14.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.14.0.tgz#1f17e35f2e51b86f627d74a6fd6ccfefc4968ddd"
-  integrity sha512-l++KGG/3/8iwUExJ8oXUHF5ra7P//xQkkhoDybUu3N7+9jpp9S2j4NWqJvgpMhRbh09zcUfuw7usII0sJO24lA==
+gatsby-plugin-manifest@^4.21.0:
+  version "4.21.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.21.0.tgz#15f0c6905be2604e22f2f7dddf239411393ab8f4"
+  integrity sha512-QzP7J2KKRrpENq5lm85jvLvW/xYCN7bfziaUyfxiip+ztHlF+E8XToxsHZqyLlgZrKoB/cUV6zu7vHpqoYFOQQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    gatsby-core-utils "^2.14.0"
-    gatsby-plugin-utils "^1.14.0"
-    semver "^7.3.5"
-    sharp "^0.29.0"
+    gatsby-core-utils "^3.21.0"
+    gatsby-plugin-utils "^3.15.0"
+    semver "^7.3.7"
+    sharp "^0.30.7"
 
 gatsby-plugin-offline@^5.13.0:
   version "5.20.0"
@@ -6687,17 +6694,17 @@ gatsby-plugin-utils@^1.14.0:
     "@babel/runtime" "^7.15.4"
     joi "^17.4.2"
 
-gatsby-plugin-utils@^3.14.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.14.0.tgz#d9b730689029d48f0527301b8b18cd9103a71383"
-  integrity sha512-Dj40dEPzkirU28vPNve7QtvPIqFahY8fmQMZH4aZXFI9h5AbMfCgtWGeBBeHvNB2CA8piyPcYrnNOL+oRe/zCg==
+gatsby-plugin-utils@^3.14.0, gatsby-plugin-utils@^3.15.0:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.15.0.tgz#1d1d7a3e696c38aa7db848e0d52aaa4ded841172"
+  integrity sha512-O4dm4ntakCoQZnnnS4oGihtT48Rrh888fMpcxj0zWu/6/8Uyz8IgagJyJAz0MMdcfhrLIE+X8Rszjk8hINDQhA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@gatsbyjs/potrace" "^2.2.0"
     fastq "^1.13.0"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^3.20.0"
-    gatsby-sharp "^0.14.0"
+    gatsby-core-utils "^3.21.0"
+    gatsby-sharp "^0.15.0"
     graphql-compose "^9.0.7"
     import-from "^4.0.0"
     joi "^17.4.2"
@@ -6777,6 +6784,14 @@ gatsby-sharp@^0.14.0:
   dependencies:
     "@types/sharp" "^0.30.0"
     sharp "^0.30.3"
+
+gatsby-sharp@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-0.15.0.tgz#a911f9ffe0efee947ae762b83fb0c8f343c87195"
+  integrity sha512-JtW6lLW5GmuQSyZ5l64Cg1qjXhFsMDAf9nzc2RC8srf6hsr2ifI0vTCHh0jImFXQqseaQ3HVlbCKYMbDtXXCIg==
+  dependencies:
+    "@types/sharp" "^0.30.5"
+    sharp "^0.30.7"
 
 gatsby-source-filesystem@^3.14.0:
   version "3.14.0"
@@ -11422,7 +11437,7 @@ sharp@^0.29.0:
     tar-fs "^2.1.1"
     tunnel-agent "^0.6.0"
 
-sharp@^0.30.3:
+sharp@^0.30.3, sharp@^0.30.7:
   version "0.30.7"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.30.7.tgz#7862bda98804fdd1f0d5659c85e3324b90d94c7c"
   integrity sha512-G+MY2YW33jgflKPTXXptVO28HvNOo9G3j0MybYAHeEmby+QuD2U98dT6ueht9cv/XDqZspSpIhoSW+BAKJ7Hig==
