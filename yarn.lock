@@ -6355,10 +6355,10 @@ gatsby-plugin-page-creator@^4.20.0:
     globby "^11.1.0"
     lodash "^4.17.21"
 
-gatsby-plugin-react-helmet@^5.22.0:
-  version "5.22.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-5.22.0.tgz#c5e45a1337be271137ad08a9238996146144a75d"
-  integrity sha512-BkOZuITW579ZHb9NtnDc+5b+iNnEY/BdMSgrJ3CJKvRhi5RVTpm+k3yOwSuIevYt/uYosfEEFG4KbCZ76dHC+g==
+gatsby-plugin-react-helmet@^5.23.0:
+  version "5.23.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-5.23.0.tgz#205224abc96cdb86094967f3eb1abd28ca4fe55c"
+  integrity sha512-xS8WjuyRoeYv8U2YSHNfnF1o4LPq2YMY6Za04tGnGd+g3C8dSXcQO6mP4Pr5jDzFxOpCitwAG7C22peK8a/zIQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
@@ -10979,10 +10979,10 @@ sass-loader@^10.1.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.51.0:
-  version "1.54.2"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.2.tgz#574cad83814c930ef2475921b9cb5d8203ae8867"
-  integrity sha512-wbVV26sejsCIbBScZZtNkvnrB/bVCQ8hSlZ01D9nzsVh9zLqCkWrlpvTb3YEb6xsuNi9cx75hncqwikHFSz7tw==
+sass@^1.54.9:
+  version "1.54.9"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.9.tgz#b05f14ed572869218d1a76961de60cd647221762"
+  integrity sha512-xb1hjASzEH+0L0WI9oFjqhRi51t/gagWnxLiwUNMltA0Ab6jIDkAacgKiGYKM9Jhy109osM7woEEai6SXeJo5Q==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
