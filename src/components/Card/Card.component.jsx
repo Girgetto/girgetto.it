@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import rectangle from "../../images/rectangle.png";
-
 const Card = ({ node }) => {
   return (
     <Link to={node.fields.slug}>
@@ -19,3 +17,4 @@ const Card = ({ node }) => {
 };
 
 export default Card;
+
