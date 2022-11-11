@@ -2,20 +2,46 @@
   @include grid;
   padding: 62px $sidePadding;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   #links {
     text-align: center;
     flex-grow: 0.8;
+    margin: 48px 0;
+
     .link {
-      padding: 6px 12px;
+      padding: 3px 12px;
       border-radius: 1000px;
       margin: 24px;
+
       &:hover {
         background-color: $gray200;
       }
+
       &.is-selected {
-        background-color: $primary;
+        background: linear-gradient(90deg,
+            $primary 0%,
+            $secondary 100%);
         color: $textSelected;
+      }
+    }
+  }
+
+  .social {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+
+    &>a {
+      width: 58px;
+      text-align: center;
+      padding: 8px;
+
+
+      &:hover {
+        background-color: $gray200;
+        border-radius: 5%;
       }
     }
   }
@@ -24,18 +50,39 @@
 @media (max-width: $breakpoint-mobile) {
   #header {
     padding: 0;
-    align-items:flex-start;
+    align-items: flex-start;
     flex-direction: column;
+    padding: 4%;
+
     a {
       padding: $mobile-padding;
     }
+
     #links {
       position: fixed;
       bottom: 0;
+      left: 0;
       background-color: #fff;
       padding: 40px 0;
       margin: 0 auto;
       width: 100%;
+      z-index: 1;
+    }
+
+    .social {
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 400px;
+
+      &>a {
+        padding: 8px;
+        max-width: 48px;
+
+        &>svg {
+          max-width: 48px;
+        }
+      }
     }
   }
 }

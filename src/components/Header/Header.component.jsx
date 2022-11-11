@@ -35,19 +35,12 @@ const Header = () => {
   const [post] = edges;
 
   return (
-    <header className="header row flex">
-      <Link className="header-img-link" to={post.node.fields.slug}>
-        <img
-          className="main-post-img"
-          alt="main-post"
-          src={post.node.frontmatter.img || rectangle}
-        />
-      </Link>
+    <header className="header row">
       <article className="article">
         <Link to={post.node.fields.slug}>
-          <h1>{post.node.frontmatter.title}</h1>
+          <h1 className="main-title">{post.node.frontmatter.title}</h1>
         </Link>
-        <p>{post.node.frontmatter.description}</p>
+        <p className="main-description">{post.node.frontmatter.description}</p>
       </article>
     </header>
   );

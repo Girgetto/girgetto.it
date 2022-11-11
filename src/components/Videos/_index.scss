@@ -1,0 +1,9 @@
+.videos {
+    padding-right: $sidePadding;
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .videos {
+        display: none;
+    }
+}

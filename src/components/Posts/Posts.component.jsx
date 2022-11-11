@@ -11,9 +11,9 @@ export default function Posts() {
       query {
         allMarkdownRemark(
           skip: 1
-          limit: 3
+          limit: 4
           sort: { order: DESC, fields: frontmatter___date }
-          filter: { frontmatter: { lang: { eq: "es" }, type: { eq: "post"} } }
+          filter: { frontmatter: { lang: { eq: "es" } } }
         ) {
           edges {
             node {

@@ -2,9 +2,10 @@
   padding: $sidePadding $sidePadding;
 
   .social-links {
-    & > a {
+    &>a {
       padding-right: 24px;
     }
+
     justify-content: space-between;
   }
 }
@@ -13,5 +14,11 @@
   .footer {
     padding: $mobile-padding;
     width: $mobile-article-width;
+    height: 120px;
+    z-index: 9999;
+
+    .social-links {
+      display: none;
+    }
   }
 }

@@ -1,20 +1,26 @@
 $textNormal: #000;
 $textSelected: #fff;
 $textLink: #000;
-$primary: #66cb9f;
+$primary: #9801d3;
+$secondary: #4a23d7;
 $textLinkVisited: #000;
 $smallText: #425466;
 $gray200: #e2e8f0;
 $sidePadding: 147px;
 $font-family: "Inter";
+$font-family-light: "Inter-light";
 $small-font-size: 14px;
 $medium-font-size: 18px;
 $big-font-size: 32px;
 $post-font-size: 21px;
 $breakpoint-mobile: 600px;
+$breakpoint-tablet-min: 768px;
+$breakpoint-tablet-max: 1024px;
 $mobile-padding: 32px;
 $mobile-img-width: 314px;
 $mobile-article-width: 268px;
+$tableOfContentWidth: 268px;
+$blogWidth: 680px;
 
 :root {
   --deckgo-highlight-code-font-size: 16px;

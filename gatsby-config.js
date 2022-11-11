@@ -6,7 +6,13 @@ module.exports = {
   siteMetadata: {
     title: "girgetto.it",
     author: { name: `Giorgio Grassini` },
-    description: `girgetto.it personal blog`,
+    description: `
+      Plataforma para encontrar materiales 
+      sobre el desarrollo web, lenguajes de programación, 
+      frameworks y librerías como: JavaScript, react, nodejs,
+      express, css, HTML. Creado por Giorgio Grassini, web 
+      developer en DCSL Guidesmiths y Lead teacher 
+      en ThirdBridge bootcamp.`,
     siteUrl: `https://girgetto.it`,
     social: {
       twitter: `GirgettoIT`,
@@ -14,21 +20,6 @@ module.exports = {
   },
   pathPrefix: `/`,
   plugins: [
-    "gatsby-plugin-offline",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-sass",
-    "gatsby-plugin-gatsby-cloud",
-    "gatsby-plugin-image",
-    "gatsby-plugin-fontawesome-css",
-    "gatsby-plugin-react-helmet",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/icon.png",
-      },
-    },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -36,38 +27,48 @@ module.exports = {
         path: "./content/",
       },
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
+    },
+    "gatsby-plugin-sass",
+    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     `gatsby-transformer-remark`,
-    {
-      resolve: "gatsby-source-graphql",
-      options: {
-        typeName: "GitHub",
-        fieldName: "github",
-        url: "https://api.github.com/graphql",
-        headers: {
-          Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
-        },
-        fetchOptions: {},
-      },
-    },
-    {
-      resolve: "gatsby-plugin-bundle-stats",
-      options: {
-        compare: true,
-        outDir: "../artifacts",
-        stats: {
-          context: "./src",
-        },
-      },
-    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+          },
           {
             resolve: `gatsby-remark-highlight-code`,
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
           },
         ],
       },
     },
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-offline",
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.girgetto.it',
+        sitemap: 'https://girgetto.it/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    }
   ],
 };
