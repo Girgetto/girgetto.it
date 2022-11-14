@@ -42,7 +42,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "sass": "^1.55.0"
+    "sass": "^1.56.1"
   },
   "devDependencies": {
     "is-svg": ">=4.3.2"
