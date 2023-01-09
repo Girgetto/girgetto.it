@@ -21,7 +21,7 @@ const Navbar = ({ location }) => (
     >
       <Link to="/" style={{ display: "flex", alignItems: "center" }}>
         <img
-          src="https://pbs.twimg.com/profile_images/1508421859091562504/6-rItSOz_400x400.jpg"
+          src="https://avatars.githubusercontent.com/u/33903092?v=4"
           alt="girgetto_foto"
           style={{ borderRadius: "50%", width: "100px", height: "100px" }}
         />

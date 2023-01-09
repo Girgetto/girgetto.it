@@ -19,7 +19,7 @@
     "ansi-html-community": "^0.0.8",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "gatsby": "^4.20.0",
+    "gatsby": "^4.25.2",
     "gatsby-plugin-gatsby-cloud": "^4.14.0-next.1",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-manifest": "^4.24.0",
@@ -33,16 +33,16 @@
     "gatsby-remark-autolink-headers": "^5.24.0",
     "gatsby-remark-highlight-code": "^3.0.2",
     "gatsby-remark-images": "^6.24.0",
-    "gatsby-source-filesystem": "^4.23.0",
-    "gatsby-source-graphql": "^4.22.0",
+    "gatsby-source-graphql": "^4.25.0",
+    "gatsby-source-filesystem": "^4.25.0",
     "gatsby-transformer-remark": "^5.24.0",
-    "gatsby-transformer-sharp": "^4.23.0",
+    "gatsby-transformer-sharp": "^4.25.0",
     "jsdom": "^20.0.2",
     "prettier": "^2.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "sass": "^1.55.0"
+    "sass": "^1.57.1"
   },
   "devDependencies": {
     "is-svg": ">=4.3.2"
