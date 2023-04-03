@@ -11,7 +11,7 @@ const Header = () => {
       query {
         allMarkdownRemark(
           limit: 1
-          sort: { order: DESC, fields: frontmatter___date }
+          sort: { frontmatter: { date: DESC } }
         ) {
           edges {
             node {

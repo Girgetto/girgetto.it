@@ -12,7 +12,7 @@ export default function Posts() {
         allMarkdownRemark(
           skip: 1
           limit: 4
-          sort: { order: DESC, fields: frontmatter___date }
+          sort: { frontmatter: { date: DESC } }
           filter: { frontmatter: { lang: { eq: "es" } } }
         ) {
           edges {
