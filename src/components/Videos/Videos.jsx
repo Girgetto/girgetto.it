@@ -27,7 +27,7 @@ const Videos = () => {
   return (
     <div className="videos">
       <h1>Último streaming</h1>
-      {node.data.id < 0 ? (
+      {!node.data.id ? (
         <p>No hay videos esta semana 😞</p>
       ) : (
         <a href={node.data.url} rel="noreferrer" target="_blank">
