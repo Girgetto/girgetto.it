@@ -8,6 +8,9 @@ lang: es
 
 # Despliegue
 
+En este articulo vamos a ver como desplegar una aplicación backend y frontend en fly.io y vercel.
+Esta el proyecto que vamos a subir en [este repositorio](https://github.com/TheBridge-FullStackDeveloper/fs-pt-01-23-deploy), la carpeta de back será la que desplegaremos en fly.io y la carpeta de front será la que desplegaremos en vercel.
+
 ## Back
 
 1. Registrarse en [https://fly.io/](fly.io)
@@ -36,7 +39,7 @@ fly deploy
 fly pg attach NOMBRE_DE_BBDD
 ```
 
-### Poner atención a los siguientes puntos:
+### Poner atención a los siguientes puntos:
 
 - en el `db.js` acordarse de poner la variable de entorno `DATABASE_URL` ej.
 
