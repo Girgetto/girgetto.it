@@ -25,11 +25,17 @@ a:visited {
   color: $textLinkVisited;
 }
 
-p {
+p, li {
   font-family: $font-family-light;
   font-size: $small-font-size;
   color: $smallText;
-  line-height: 18px;
+}
+
+li {
+  font-family: $font-family-light;
+  font-size: $medium-font-size;
+  color: $smallText;
+  line-height: 28px;
 }
 
 button {
@@ -43,7 +49,7 @@ h1 {
 
 h2 {
   font-size: $medium-font-size;
-  line-height: 2em;
+  line-height: 1.2em;
 }
 
 h5 {

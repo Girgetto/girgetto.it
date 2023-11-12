@@ -7,11 +7,14 @@ import Footer from "../components/Footer";
 const Layout = ({ location, children }) => {
   deckDeckGoHighlightElement();
   return (
-    <>
+    <main style={{
+      maxWidth: `1780px`,
+      margin: `0 auto`,
+    }}>
       <Navbar location={location} />
       {children}
       <Footer />
-    </>
+    </main>
   );
 };
 

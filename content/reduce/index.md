@@ -7,8 +7,6 @@ type: post
 lang: en
 ---
 
-![image](https://images.unsplash.com/photo-1531736275454-adc48d079ce9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80)
-
 <sub><sup>Photo by [Martin Adams](https://unsplash.com/@martinadams) on Unsplash<sub><sup>
 
 The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value.
