@@ -42,7 +42,7 @@ Con los asteriscos (*) puedes escribir texto en negrita, si pones uno al princip
 
 ## Como tachar texto en Markdown
 
-Utiliza dos tildes (~) al principio y al final para tachar el texto.
+Utiliza dos virgulillas (~) al principio y al final para tachar el texto.
 
 ~~Texto tachado~~ `~~Texto tachado~~`
 
