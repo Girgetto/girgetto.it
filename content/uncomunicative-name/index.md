@@ -7,8 +7,6 @@ type: post
 lang: es
 ---
 
-![image](https://images.unsplash.com/photo-1592296429945-93008c7e5a59?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80)
-
 <sub><sup>Photo by [okeykat](https://unsplash.com/@okeykat) on Unsplash<sub><sup>
 
 Veamos algunos casos de nombre poco comunicativo.

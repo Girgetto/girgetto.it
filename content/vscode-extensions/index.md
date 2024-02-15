@@ -7,8 +7,6 @@ type: post
 lang: es
 ---
 
-![leone-venter-unsplash](https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1pbmltYWwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)
-
 <sub><sup>Photo by [Leone Venter](https://unsplash.com/@fempreneurstyledstock) on Unsplash<sub><sup>
 
 Esta es una lista de 5 extensiones y temas para VS Code que uso a menudo y encuentro útiles.
