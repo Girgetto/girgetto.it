@@ -4,6 +4,7 @@ date: "2023-10-09"
 description: La secuencia de Fibonacci es un problema clásico en la programación que a menudo se utiliza para enseñar conceptos fundamentales. En este tutorial, aprenderás cómo resolver la secuencia de Fibonacci en JavaScript de manera eficiente y paso a paso. Después de dominar este concepto, estarás mejor preparado para enfrentar desafíos de programación más complejos.
 type: post
 lang: es
+img: https://i.postimg.cc/FHgGW8C8/image.png
 ---
 
 # Resolviendo la Secuencia de Fibonacci en JavaScript: Un Tutorial Paso a Paso
