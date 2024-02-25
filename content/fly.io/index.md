@@ -17,21 +17,21 @@ Instala la herramienta de línea de comandos `flyctl` siguiendo las instruccione
 ### Paso 3: Configuración de la Base de Datos
 Para crear un servicio para tu base de datos, ejecuta el siguiente comando en tu terminal, reemplazando `DATABASE_NAME` con el nombre deseado para tu base de datos:
 
-```sh
+```
 fly pg create --name DATABASE_NAME --region cdg
 ```
 
 ### Paso 4 y 5: Despliegue de la Aplicación
 Despliega tu aplicación en Fly.io utilizando el comando:
 
-```sh
+```
 fly deploy
 ```
 
 ### Paso 6: Configuración de Variables de Entorno
 Adjunta tu base de datos al servicio con el siguiente comando, reemplazando `NOMBRE_DE_BBDD` con el nombre de tu base de datos:
 
-```sh
+```
 fly pg attach NOMBRE_DE_BBDD
 ```
 
@@ -54,7 +54,7 @@ fly pg attach NOMBRE_DE_BBDD
 
 - **Creación de Tablas en la Base de Datos**: Asegúrate de haber creado las tablas necesarias en tu base de datos ejecutando:
 
-  ```sh
+  ```
   fly postgres connect -a DDBB_NAME
   ```
 
@@ -69,13 +69,13 @@ Descarga e instala la interfaz de línea de comandos de Vercel desde [aquí](htt
 ### Paso 3 y 4: Despliegue de la Aplicación
 Para desplegar tu aplicación en Vercel, ejecuta:
 
-```sh
+```
 vercel
 ```
 
 Y para el despliegue en producción, utiliza:
 
-```sh
+```
 vercel --prod
 ```
 

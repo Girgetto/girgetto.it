@@ -14,7 +14,6 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@deckdeckgo/highlight-code": "^4.4.0",
     "@tabler/icons": "^1.103.0",
     "ansi-html-community": "^0.0.8",
     "eslint-config-prettier": "^8.5.0",
