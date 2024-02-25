@@ -1162,18 +1162,18 @@
   resolved "https://registry.npmjs.org/@builder.io/partytown/-/partytown-0.7.6.tgz"
   integrity sha512-snXIGNiZpqjno3XYQN2lbBB+05hsQR/LSttbtIW1c0gmZ7Kh/DIo0YrxlDxCDulAMFPFM8J+4voLwvYepSj3sw==
 
-"@deckdeckgo/highlight-code@^3.6.0":
-  version "3.6.0"
-  resolved "https://registry.npmjs.org/@deckdeckgo/highlight-code/-/highlight-code-3.6.0.tgz"
-  integrity sha512-3MUXcnuQwiE3n5v6dsiBWFlfg5st//c8/tvkzuMj+2kejzn5bpW80JlF8zK9tZUNxXNwN0mdtC3L5e+FNsOHZw==
+"@deckdeckgo/highlight-code@^3.6.0", "@deckdeckgo/highlight-code@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.npmjs.org/@deckdeckgo/highlight-code/-/highlight-code-4.4.0.tgz"
+  integrity sha512-skWKYvIKBpfS3oc7NYu8PvZJ6mVlu1DSsTGD6gt6rsFA3I8TTbtzbo/6deWY/LWkFG1ceGRE5u6LcdzzvBh9vA==
   dependencies:
-    "@deckdeckgo/utils" "^2.4.0"
-    prismjs "^1.25.0"
+    "@deckdeckgo/utils" "^5.1.0"
+    prismjs "^1.27.0"
 
-"@deckdeckgo/utils@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.npmjs.org/@deckdeckgo/utils/-/utils-2.4.0.tgz"
-  integrity sha512-lDNhafpfVVafXyxhHMwhWmHEvzIw8yC3MFTLy7HN8Syb7bOSpEnB4pEaybWXZ5iqFA3l9WtvbPtqA7t+VtFJ5g==
+"@deckdeckgo/utils@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.npmjs.org/@deckdeckgo/utils/-/utils-5.1.0.tgz"
+  integrity sha512-ue/1BXkDBZ9k+Tqs3vyCRIjqxjPnl06ab9WGhGubAXoRtJIE7ZN58/pbLsPCYc4xFcY0TPH3tsWhE7eF/FU8Ew==
 
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
@@ -9602,7 +9602,7 @@ pretty-error@^2.1.2:
     lodash "^4.17.20"
     renderkid "^2.0.4"
 
-prismjs@^1.25.0:
+prismjs@^1.27.0:
   version "1.29.0"
   resolved "https://registry.npmjs.org/prismjs/-/prismjs-1.29.0.tgz"
   integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
