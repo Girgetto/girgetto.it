@@ -10,9 +10,7 @@ module.exports = {
       Plataforma para encontrar materiales 
       sobre el desarrollo web, lenguajes de programación, 
       frameworks y librerías como: JavaScript, react, nodejs,
-      express, css, HTML. Creado por Giorgio Grassini, web 
-      developer en DCSL Guidesmiths y Lead teacher 
-      en ThirdBridge bootcamp.`,
+      express, css, HTML.`,
     siteUrl: `https://girgetto.it`,
     social: {
       twitter: `GirgettoIT`,
@@ -70,6 +68,19 @@ module.exports = {
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
+      {
+    resolve: "gatsby-plugin-parse-rss",
+    options: {
+      rss: [
+        {
+          urlToFetch:
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UChqlNb3LpXclrYsIXzD2q_w",
+          selectors: ["media:title", "media:thumbnail", "entry > link"],
+          name: "youTubeRSS",
+        },
+      ],
+    },
+  },
   ],
   trailingSlash: `always`,
 };

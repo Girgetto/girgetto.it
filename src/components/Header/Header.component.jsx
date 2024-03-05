@@ -33,7 +33,7 @@ const Header = () => {
     <header className="header row">
       <Link to={post.node.fields.slug}>
         <article className="article">
-          <h1 className="main-title">{post.node.frontmatter.title}</h1>
+          <h2 className="main-title">{post.node.frontmatter.title}</h2>
           <p className="main-description">
             {post.node.frontmatter.description}
           </p>

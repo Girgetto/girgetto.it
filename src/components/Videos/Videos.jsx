@@ -1,12 +1,20 @@
-import React from "react";
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby";
 
 const Videos = () => {
   const {
+    allYouTubeRss: { nodes },
     allTwitch: { edges },
   } = useStaticQuery(
     graphql`
       query {
+        allYouTubeRss {
+          nodes {
+            media_title
+            media_thumbnail
+            entry___link
+          }
+        }
         allTwitch(limit: 1) {
           edges {
             node {
@@ -23,17 +31,25 @@ const Videos = () => {
     `
   );
   const [{ node }] = edges;
+  const [youtube] = nodes;
 
   return (
     <div className="videos">
-      <h1>Último streaming</h1>
-      {!node.data.id ? (
-        <p>No hay videos esta semana 😞</p>
-      ) : (
-        <a href={node.data.url} rel="noreferrer" target="_blank">
-          <p>
-            <b>Twitch</b> 👉 {node.data.title}
-          </p>
+      <h2>Latest Videos</h2>
+      {!!youtube && (
+        <a href={youtube.entry___link[0]}>
+          <img
+            src={youtube.media_thumbnail[0]}
+            alt={youtube.media_title[0]}
+            className="youtube_thumbnail"
+          />
+          <p>{youtube.media_title[0]}</p>
+        </a>
+      )}
+      {!!node && (
+        <a href={node.data.url}>
+          <img src={node.data.thumbnail_url} alt={node.data.title} />
+          <h2>{node.data.title}</h2>
         </a>
       )}
     </div>

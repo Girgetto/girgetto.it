@@ -2,8 +2,9 @@
     padding-right: $sidePadding;
 }
 
-@media (max-width: $breakpoint-mobile) {
-    .videos {
-        display: none;
-    }
+.youtube_thumbnail {
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
