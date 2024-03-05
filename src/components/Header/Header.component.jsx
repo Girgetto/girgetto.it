@@ -7,10 +7,7 @@ const Header = () => {
   } = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(
-          limit: 1
-          sort: { frontmatter: { date: DESC } }
-        ) {
+        allMarkdownRemark(limit: 1, sort: { frontmatter: { date: DESC } }) {
           edges {
             node {
               id
@@ -34,12 +31,14 @@ const Header = () => {
 
   return (
     <header className="header row">
-      <article className="article">
-        <Link to={post.node.fields.slug}>
+      <Link to={post.node.fields.slug}>
+        <article className="article">
           <h2 className="main-title">{post.node.frontmatter.title}</h2>
-        </Link>
-        <p className="main-description">{post.node.frontmatter.description}</p>
-      </article>
+          <p className="main-description">
+            {post.node.frontmatter.description}
+          </p>
+        </article>
+      </Link>
     </header>
   );
 };

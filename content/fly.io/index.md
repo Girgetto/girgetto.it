@@ -4,89 +4,91 @@ date: "2023-07-13"
 description: Pasos necesarios para poder subir una aplicación backend a fly.io y una aplicación frontend in vercel.
 type: post
 lang: es
+img: https://i.postimg.cc/766kYgTP/image.png
 ---
+## Desplegando el Backend en Fly.io
 
-# Despliegue
+### Paso 1: Crear una Cuenta en Fly.io
+Primero, necesitarás registrarte en [Fly.io](https://fly.io/).
 
-En este articulo vamos a ver como desplegar una aplicación backend y frontend en fly.io y vercel.
-Esta el proyecto que vamos a subir en [este repositorio](https://github.com/TheBridge-FullStackDeveloper/fs-pt-01-23-deploy), la carpeta de back será la que desplegaremos en fly.io y la carpeta de front será la que desplegaremos en vercel.
+### Paso 2: Instalar Flyctl
+Instala la herramienta de línea de comandos `flyctl` siguiendo las instrucciones disponibles en la [documentación oficial de Fly.io](https://fly.io/docs/hands-on/install-flyctl/).
 
-## Back
+### Paso 3: Configuración de la Base de Datos
+Para crear un servicio para tu base de datos, ejecuta el siguiente comando en tu terminal, reemplazando `DATABASE_NAME` con el nombre deseado para tu base de datos:
 
-1. Registrarse en [https://fly.io/](fly.io)
-2. Instalar flyctl https://fly.io/docs/hands-on/install-flyctl/
-3. Crear un servicio para la BBDD con este script:
-
-```sh
+```
 fly pg create --name DATABASE_NAME --region cdg
 ```
 
-4. Crear un servicio para la aplicación con este script:
+### Paso 4 y 5: Despliegue de la Aplicación
+Despliega tu aplicación en Fly.io utilizando el comando:
 
-```sh
+```
 fly deploy
 ```
 
-5. Vamos a subir la aplicación a fly.io
+### Paso 6: Configuración de Variables de Entorno
+Adjunta tu base de datos al servicio con el siguiente comando, reemplazando `NOMBRE_DE_BBDD` con el nombre de tu base de datos:
 
-```sh
-fly deploy
 ```
-
-5. Vamos a inserir la variable de entorno en fly.io
-
-```sh
 fly pg attach NOMBRE_DE_BBDD
 ```
 
-### Poner atención a los siguientes puntos:
+#### Consideraciones Importantes para el Backend:
 
-- en el `db.js` acordarse de poner la variable de entorno `DATABASE_URL` ej.
+- **Configuración de la Base de Datos**: En el archivo `db.js`, asegúrate de utilizar la variable de entorno `DATABASE_URL` para la conexión:
 
-```js
-const SLONIK_URL = process.env.DATABASE_URL;
+  ```js
+  const SLONIK_URL = process.env.DATABASE_URL;
+  ```
+
+- **Configuración de CORS**: En `cors.js`, añade las URLs permitidas (whitelist), incluyendo la URL de tu frontend, por ejemplo:
+
+  ```js
+  const whitelist = [
+    "http://localhost:3000",
+    "https://deploy-example.vercel.app",
+  ];
+  ```
+
+- **Creación de Tablas en la Base de Datos**: Asegúrate de haber creado las tablas necesarias en tu base de datos ejecutando:
+
+  ```
+  fly postgres connect -a DDBB_NAME
+  ```
+
+## Desplegando el Frontend en Vercel
+
+### Paso 1: Crear una Cuenta en Vercel
+Regístrate en [Vercel](https://vercel.com/).
+
+### Paso 2: Instalar Vercel CLI
+Descarga e instala la interfaz de línea de comandos de Vercel desde [aquí](https://vercel.com/download).
+
+### Paso 3 y 4: Despliegue de la Aplicación
+Para desplegar tu aplicación en Vercel, ejecuta:
+
 ```
-
-- en el `cors.js` añadir en la whitelist la url del front ej.
-
-```js
-const whitelist = [
-  "http://localhost:3000",
-  "https://deploy-example.vercel.app",
-];
-```
-
-- de haber creado las tablas en la BBDD
-
-```sh
-fly postgres connect -a DDBB_NAME
-```
-
-## Front
-
-1. Registrarse en [https://vercel.com/](vercel.com)
-2. Instalar vercel https://vercel.com/download
-3. Crear un servicio para la aplicación con este script:
-
-```sh
 vercel
 ```
 
-4. Vamos a subir la aplicación a vercel
+Y para el despliegue en producción, utiliza:
 
-```sh
+```
 vercel --prod
 ```
-### Poner atención a los siguientes puntos:
 
-- en el `.env` acordarse de poner la url del back ej.
+#### Consideraciones Importantes para el Frontend:
 
-```js
-const VITE_API_URL = "https://deploy-example.fly.dev";
-```
+- **Configuración de Variables de Entorno**: En tu archivo `.env`, define la URL de tu backend, por ejemplo:
 
-- en el axios create acordarse de la variable de entorno
+  ```js
+  const VITE_API_URL = "https://deploy-example.fly.dev";
+  ```
 
-```js
-baseURL: import.meta.env.VITE_API_URL,
-```
+- **Uso de Axios**: Al crear una instancia de Axios, recuerda utilizar la variable de entorno para la URL base:
+
+  ```js
+  baseURL: import.meta.env.VITE_API_URL,
+  ```
