@@ -1,8 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 
-import rectangle from "../../images/rectangle.png";
-
 const Header = () => {
   const {
     allMarkdownRemark: { edges },
