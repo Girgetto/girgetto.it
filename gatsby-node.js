@@ -119,7 +119,6 @@ exports.createSchemaCustomization = ({ actions }) => {
 
 exports.sourceNodes = async (
   { actions: { createNode }, createNodeId, createContentDigest },
-  pluginOptions
 ) => {
   const response = await fetch(
     `https://api.twitch.tv/helix/videos?user_id=${process.env.TWICH_GIRGETTO_USER_ID}`,

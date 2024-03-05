@@ -1,6 +1,5 @@
 .header {
   @include grid;
-  padding-left: $sidePadding;
   flex-wrap: wrap;
   max-width: 1280px;
   margin-bottom: 36px;

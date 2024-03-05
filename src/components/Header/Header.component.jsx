@@ -1,8 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 
-import rectangle from "../../images/rectangle.png";
-
 const Header = () => {
   const {
     allMarkdownRemark: { edges },
@@ -38,7 +36,7 @@ const Header = () => {
     <header className="header row">
       <article className="article">
         <Link to={post.node.fields.slug}>
-          <h1 className="main-title">{post.node.frontmatter.title}</h1>
+          <h2 className="main-title">{post.node.frontmatter.title}</h2>
         </Link>
         <p className="main-description">{post.node.frontmatter.description}</p>
       </article>
