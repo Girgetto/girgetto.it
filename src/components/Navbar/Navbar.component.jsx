@@ -34,7 +34,10 @@ const Navbar = ({ location }) => (
           key={link}
           to={link}
           className={
-            "link" + (location.pathname.replaceAll("/", "") === link.replaceAll("/", "") ? " is-selected" : "")
+            "link" +
+            (location.pathname.replaceAll("/", "") === link.replaceAll("/", "")
+              ? " is-selected"
+              : "")
           }
         >
           {name}
