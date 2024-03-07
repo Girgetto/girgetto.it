@@ -1,5 +1,7 @@
-.videos {
-    padding-right: $sidePadding;
+@media (max-width: 768px) {
+  .videos {
+    text-align: center;
+  }
 }
 
 .youtube_thumbnail {
@@ -7,4 +9,3 @@
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
