@@ -16,7 +16,7 @@
   "dependencies": {
     "@tabler/icons": "^1.103.0",
     "ansi-html-community": "^0.0.8",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "gatsby": "^5.8.0",
     "gatsby-plugin-gatsby-cloud": "^5.8.0",
