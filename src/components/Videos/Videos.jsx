@@ -2,6 +2,10 @@ import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Videos = ({ serverData }) => {
+  if (!serverData?.items) {
+    return null;
+  }
+
   return (
     <div className="videos">
       {serverData?.items?.map((video, index) => (
