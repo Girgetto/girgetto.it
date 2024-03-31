@@ -1,4 +1,5 @@
 import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Videos = ({ serverData }) => {
   return (
@@ -8,10 +9,11 @@ const Videos = ({ serverData }) => {
           <h2>Latest Video</h2>
           <a
             href={`https://youtube.com/shorts/${video.id.videoId}`}
+            alt={video.snippet.title}
             _target="blank"
           >
-            <img
-              src={video.snippet.thumbnails.medium.url}
+            <GatsbyImage
+              image={getImage(video.snippet.thumbnails.high)}
               alt={video.title}
             />
           </a>
