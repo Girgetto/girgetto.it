@@ -19,7 +19,7 @@ A continuación, exploraremos algunos de los mejores servicios de hosting gratui
 - **Vercel** - [Visitar](https://vercel.com/girgetto) - Hosting para sitios estáticos y funciones serverless - Proporciona bandwidth ilimitado para sitios estáticos y funciones serverless con ejecuciones diarias limitadas.
 - **Supabase** - [Visitar](https://supabase.com/dashboard/projects) - Backend como servicio - Incluye autenticación, base de datos en tiempo real, y almacenamiento con límites generosos en su plan gratuito.
 - **Back4app** - [Visitar](https://dashboard.back4app.com/apps) - Backend como servicio basado en Parse - Ofrece una capa gratuita con límites en solicitudes y almacenamiento de datos.
-- **Netlify** - [Visitar](https://app.netlify.com/) - Hosting para sitios estáticos - Brinda deploy continuo desde Git across all plans y un generoso número de build minutes en el plan gratuito.
+- **Netlify** - [Visitar](https://app.netlify.com/) - Hosting para sitios estáticos - Brinda deploy continuo desde Git en todos los planes y un generoso número de build minutes en el plan gratuito.
 - **Cyclic** - [Visitar](https://app.cyclic.sh/) - Hosting de aplicaciones full-stack con funciones serverless - La capa gratuita incluye un dominio gratuito y logs detallados.
 - **Render** - [Visitar](https://render.com/) - Cloud service que ofrece hosting de aplicaciones, bases de datos y almacenamiento - El plan gratuito incluye servicios web, cron jobs, y bases de datos PostgreSQL.
 - **Railway** - [Visitar](https://railway.app/) - Plataforma de infraestructura como servicio - Ofrece una cantidad generosa de créditos gratis cada mes para utilizar en diversos servicios.
