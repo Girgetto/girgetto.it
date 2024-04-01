@@ -13,7 +13,7 @@ A continuación, exploraremos algunos de los mejores servicios de hosting gratui
 ## Aplicaciones y Servicios Web
 
 - **Fly.io** - [Visitar](https://fly.io/dashboard) - Hosting de aplicaciones - La capa gratuita incluye 3 VMs compartidas y 160 GB de transferencia de datos.
-- **Heroku** - [Visitar](https://dashboard.heroku.com/apps) - Plataforma como servicio (PaaS) - Ofrece dynos (contenedores ligeros) gratuitos con limitaciones de sueño después de 30 mins de inactividad.
+- **Heroku** - [Visitar](https://dashboard.heroku.com/apps) - Plataforma como servicio (PaaS) - Ofrece dynos (contenedores ligeros) a partir de 5$ al mes.
 - **Vercel** - [Visitar](https://vercel.com/girgetto) - Hosting para sitios estáticos y funciones serverless - Proporciona bandwidth ilimitado para sitios estáticos y funciones serverless con ejecuciones diarias limitadas.
 - **Supabase** - [Visitar](https://supabase.com/dashboard/projects) - Backend como servicio - Incluye autenticación, base de datos en tiempo real, y almacenamiento con límites generosos en su plan gratuito.
 - **Back4app** - [Visitar](https://dashboard.back4app.com/apps) - Backend como servicio basado en Parse - Ofrece una capa gratuita con límites en solicitudes y almacenamiento de datos.
