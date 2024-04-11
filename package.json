@@ -22,7 +22,7 @@
     "gatsby-plugin-gatsby-cloud": "^5.8.0",
     "gatsby-plugin-image": "^3.0.0",
     "gatsby-plugin-manifest": "^5.8.0",
-    "gatsby-plugin-offline": "^6.8.0",
+    "gatsby-plugin-offline": "^6.13.2",
     "gatsby-plugin-parse-rss": "^1.0.3",
     "gatsby-plugin-react-helmet": "^6.8.0",
     "gatsby-plugin-robots-txt": "^1.7.1",
