@@ -14,7 +14,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@tabler/icons": "^1.103.0",
+    "@tabler/icons": "^3.3.0",
     "ansi-html-community": "^0.0.8",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^4.0.0",
